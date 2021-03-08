@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jacob Hell's Blog</title><link>https://jacobhell.com/</link><description>Recent content on Jacob Hell's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jacobhell.com/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Build a Gaming PC Under $250</title><link>https://jacobhell.com/post/gaming-pc-under-250/</link><pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/gaming-pc-under-250/</guid><description>&lt;h2 id="the-dell-optiplex-series">The Dell Optiplex Series&lt;/h2>
+&lt;p>This computer is the defacto tower purchased by IT departments. Since there are so many, it is easy to get them used.&lt;/p>
+&lt;p>The tower is also designed to modular. The components are easy to replace, and you can easily fit a GPU into a PCIe port.&lt;/p>
+&lt;h3 id="where-to-find-one">Where to Find One&lt;/h3>
+&lt;p>I used &lt;a href="ebay.com">Ebay&lt;/a>. Here are the search parameters I recommend:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Search &amp;ldquo;Dell Optiplex Tower&amp;rdquo;&lt;/p>
+&lt;ul>
+&lt;li>I recommend not getting a small or mini form factor case. It will be harder to find a GPU.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Apply only &amp;ldquo;Buy it Now&amp;rdquo; listings.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Sort by lowest price + shipping.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Check the boxes for 8GB and 16 GB RAM.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Check box for 3.00 - 3.49 GHz CPU speed.&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;p>I was able to buy a computer for $98 including tax and shipping using the above parameters. I did a search now and found a few options at $100.&lt;/p>
+&lt;p>Total so far: &lt;strong>$100&lt;/strong>&lt;/p>
+&lt;h2 id="gpu">GPU&lt;/h2>
+&lt;p>It&amp;rsquo;s hard to get a GPU right now. Ever since COVID-19 restrictions began demand has been very high. You can still find a good deal on Ebay though.&lt;/p>
+&lt;p>Here are some cards to look for that will fit the Optiplex:&lt;/p>
+&lt;ul>
+&lt;li>RX 560&lt;/li>
+&lt;li>GTX 1050&lt;/li>
+&lt;li>RX 570&lt;/li>
+&lt;li>R9 280X&lt;/li>
+&lt;/ul>
+&lt;p>Like I said, the prices are inflated a bit, but you should be able to snag one of these for $100. I was able to find an RX 560 for $106 with tax and shipping on Ebay.&lt;/p>
+&lt;p>Use a similar process to buying the Optiplex:&lt;/p>
+&lt;ol>
+&lt;li>Type in the GPU model&lt;/li>
+&lt;li>Apply &amp;ldquo;Buy it Now&amp;rdquo; listings.&lt;/li>
+&lt;li>Sort by lowest price + shipping.&lt;/li>
+&lt;/ol>
+&lt;p>Total so far: &lt;strong>$206&lt;/strong>.&lt;/p>
+&lt;h2 id="power-supply">Power Supply&lt;/h2>
+&lt;p>The final and cheapest part of the build. Don&amp;rsquo;t go used for this one.&lt;/p>
+&lt;p>You can use &lt;a href="pcpartpicker.com">PC Part Picker&lt;/a> to find a good deal on PSUs.&lt;/p>
+&lt;p>On PC Part Picker:&lt;/p>
+&lt;ol>
+&lt;li>Go to System Builder.&lt;/li>
+&lt;li>Select Power Supply.&lt;/li>
+&lt;li>Filter the Wattage to 500W max.&lt;/li>
+&lt;li>Sort by lowest price.&lt;/li>
+&lt;/ol>
+&lt;p>I found &lt;a href="https://www.amazon.com/ARESGAME-Supply-Bronze-Certified-AGV500/dp/B08CXVKP3M/ref=sr_1_3?dchild=1&amp;amp;keywords=power+supply+500W&amp;amp;qid=1612702724&amp;amp;sr=8-3">this one&lt;/a> on sale for $43 with tax (had free shipping).&lt;/p>
+&lt;p>Total: &lt;strong>$249&lt;/strong>&lt;/p>
+&lt;h2 id="benchmarks">Benchmarks&lt;/h2>
+&lt;p>Here are the benchmarks for my PC:&lt;/p>
+&lt;p>According &lt;a href="https://www.pcgamebenchmark.com/">PC Game Benchmark&lt;/a> my build is at the 30th percentile of computer builds. So 70% of computers are more powerful than mine.&lt;/p>
+&lt;p>Howevever, you will be able to play ~30% of the top 1000 games played (including Fortnite, Valorant, GTA 5, and Rocket League) with recommended settings.&lt;/p>
+&lt;p>You will also be able to play far more at minimum settings.&lt;/p>
+&lt;h2 id="tldr">TL;DR&lt;/h2>
+&lt;ol>
+&lt;li>Buy a used Optiplex on Ebay&lt;/li>
+&lt;li>Buy a used GPU on Ebay&lt;/li>
+&lt;li>Buy a PSU off Amazon.&lt;/li>
+&lt;/ol></description></item><item><title>What Are Reliability, Scalability, and Maintainability in Distributed Systems?</title><link>https://jacobhell.com/post/reliability-scalability-maintainability/</link><pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/reliability-scalability-maintainability/</guid><description>&lt;h2 id="reliability">Reliability&lt;/h2>
+&lt;p>Roughly, reliability means &amp;ldquo;working correctly&amp;rdquo; even if something goes wrong. This thing going wrong can be hardware faults, software faults, or human error. A synonym for reliability is fault-tolerant. It is impossible for a system to be completely fault tolerant. One tool you can use to test your system&amp;rsquo;s tolerance is Netflix&amp;rsquo;s &lt;a href="https://netflix.github.io/chaosmonkey/">Chaos Monkey&lt;/a>.&lt;/p>
+&lt;h3 id="hardware-faults">Hardware Faults&lt;/h3>
+&lt;p>As we move into a cloud based style of software development, single machine failure is getting less common. However, cloud services sometimes randomly go out. One day, I was unable to use Azure due to the &lt;a href="https://siliconangle.com/2018/09/04/severe-weather-impacts-microsofts-azure-cloud-services-texas/">outage in Texas&lt;/a>.&lt;/p>
+&lt;h3 id="software-faults">Software Faults&lt;/h3>
+&lt;p>Due to bugs, software issues can bring down entire systems. These issues can&amp;rsquo;t be stopped completely, but can be mitigated with unit testing, integration testing, and monitoring system behavior in production.&lt;/p>
+&lt;h3 id="human-error">Human Error&lt;/h3>
+&lt;p>Configuration error by humans is the leading causes of faults in systems. To mitigate this:&lt;/p>
+&lt;ul>
+&lt;li>Design systems to minimize opportunity for error.&lt;/li>
+&lt;li>Provide separate instances of the system away from production for testing and exploring.&lt;/li>
+&lt;li>Test using automated processes.&lt;/li>
+&lt;li>Allow for quick and easy recovery from human errors.&lt;/li>
+&lt;li>Setup monitoring for metrics and errors.&lt;/li>
+&lt;/ul>
+&lt;h2 id="scalability">Scalability&lt;/h2>
+&lt;p>Scalability is how well a system can respond to load. Load is described with load feature terms. For example, Twitter must handle tweets at a rate of 12000 tweets per second.&lt;/p>
+&lt;p>In online systems, we usually care about the response time. Given 12000 tweets per second, how fast can a system respond to a user? If you store data on this, it is best to take the median of the response time.&lt;/p>
+&lt;p>To respond to increased load, you can either scale-up or scale-out. Scaling up means improving system performance by buying better equipment. Scaling out means to distribute the load horizontally.&lt;/p>
+&lt;p>There is no optimal best scaling design. It is dependent on the system.&lt;/p>
+&lt;h2 id="maintainability">Maintainability&lt;/h2>
+&lt;p>Refers to ongoing maintenance of a system. There&amp;rsquo;s three design principles of software systems:&lt;/p>
+&lt;ul>
+&lt;li>Operability: Make it easy for teams to keep software running smoothly
+&lt;ul>
+&lt;li>Provide good monitoring of system internals&lt;/li>
+&lt;li>Provide good support for automation and integration of standard tools&lt;/li>
+&lt;li>Avoid dependency on individual machines&lt;/li>
+&lt;li>Provide good documentation&lt;/li>
+&lt;li>Provide good default behavior, but allow for privileged users to override&lt;/li>
+&lt;li>Allow for self healing&lt;/li>
+&lt;li>Minimize surprises&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Simplicity: Make it easy for new engineers to understand the system
+&lt;ul>
+&lt;li>Provide good abstraction&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Evolvability: Make it easy for new features to be added in future.
+&lt;ul>
+&lt;li>TDD and Agile&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Implementing Pipeline from the SciKit Learn Module</title><link>https://jacobhell.com/post/pipeline-nlp/</link><pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/pipeline-nlp/</guid><description>&lt;p>I&amp;rsquo;m continuing learning NLP. In this notebook, I give an example of the Pipeline class for preprocessing and model fitting.&lt;/p>
+&lt;p>I&amp;rsquo;m using the &lt;code>fetch_20newsgroups&lt;/code> dataset from &lt;code>sklearn.datasets&lt;/code>.&lt;/p>
+&lt;p>You can find the code &lt;a href="https://github.com/jacobhell/learning-ml/blob/main/nlp-pt-2/main.ipynb">here&lt;/a>.&lt;/p></description></item><item><title>Setting Up my PiHole, a Short Story</title><link>https://jacobhell.com/post/setting-up-pihole/</link><pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/setting-up-pihole/</guid><description>&lt;p>I just couldn&amp;rsquo;t take answering surveys on my smart TV anymore.&lt;/p>
+&lt;h3 id="setting-up-my-pi-hole-a-short-story">Setting Up my Pi Hole, a Short Story&lt;/h3>
+&lt;p>On a weekend night, I often find myself diving through the depths of YouTube. Unfortunately, every 5 minutes, I get interrupted by an ad for something I don&amp;rsquo;t want like makeup subscriptions (I long ago disabled personalized tracking).&lt;/p>
+&lt;p>One day, I was perfectly content learning about Kombucha making. All of the sudden, Google absolutely needed me to fill out a survey. I held back a scream of rage and filled out the survey. This surrender truly shook me to my core.&lt;/p>
+&lt;p>Later that night, unable to sleep, I realized what I had to do. &amp;ldquo;I need to install Pi Hole!&amp;rdquo; I yelled with new found confidence.&lt;/p>
+&lt;h2 id="the-installation">The Installation&lt;/h2>
+&lt;p>So setting up Pi Hole is supposed to be really easy. It&amp;rsquo;s often one of the first projects people install on their pi. To install it you just run a single bash command:&lt;/p>
+&lt;p>&lt;code>curl -sSL https://install.pi-hole.net | bash&lt;/code>&lt;/p>
+&lt;p>Easy peasy I thought, I should back to Kombucha videos in no time.&lt;/p>
+&lt;h2 id="the-router-the-pace-5268ac">The Router, the Pace 5268AC&lt;/h2>
+&lt;p>&amp;ldquo;Not so fast&amp;rdquo;, my router/modem combo said. It continued: &amp;ldquo;You can&amp;rsquo;t change DNS settings on me!&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Darn&amp;rdquo; I replied. A smile lit suddenly across my face. &amp;ldquo;Well, good thing I can use Pi Hole as a DHCP server too!&amp;rdquo;&lt;/p>
+&lt;p>The router/modem combo let out a hearty chuckle. &amp;ldquo;Not so fast, you can&amp;rsquo;t change DHCP settings either!&amp;rdquo;&lt;/p>
+&lt;p>The blood rushed to my face.&lt;/p>
+&lt;h2 id="the-new-router">The New Router&lt;/h2>
+&lt;p>I bought a new router. I plugged it into the uplink port on my old router/modem combo. I could change the DNS settings. Victory.&lt;/p>
+&lt;p>My Raspbian installation imploded, figuratively. It wouldn&amp;rsquo;t connect to the router via ethernet or wireless. Victory had been lost. To add insult to injury, I did not own an SD card reader, so I could not re install Raspbian.&lt;/p>
+&lt;p>Full of sorrow, I walked to Walmart and bought an SD card reader.&lt;/p>
+&lt;p>I reinstalled Raspbian. I reinstalled Pi Hole. It could connect to the router. I was blocking ads. My life became complete.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;ol>
+&lt;li>Make sure you can change DNS or DHCP settings on your router. If you can&amp;rsquo;t, you need a different one. Or a different firmware like &lt;a href="https://dd-wrt.com/">DD-WRT&lt;/a>.&lt;/li>
+&lt;li>Have an SD card reader when working with Raspberry Pis. You never know when you need to reinstall the OS.&lt;/li>
+&lt;li>Despite the challenges, a Pi Hole is fun and worthwhile.&lt;/li>
+&lt;/ol></description></item><item><title>Implementing LDA in Python</title><link>https://jacobhell.com/post/lda/</link><pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/lda/</guid><description>&lt;h2 id="definition">Definition&lt;/h2>
+&lt;p>Latent Dirichlet Allocation (LDA) is a modelling technique used for NLP.&lt;/p>
+&lt;p>I&amp;rsquo;m following along on this &lt;a href="https://www.kaggle.com/arthurtok/spooky-nlp-and-topic-modelling-tutorial">kaggle notebook&lt;/a> to learn and explain these two techniques.&lt;/p>
+&lt;h2 id="code">Code&lt;/h2>
+&lt;p>I have uploaded the jupyter file &lt;a href="https://github.com/jacobhell/learning-ml/blob/main/nlp-starter/main.ipynb">here&lt;/a>.&lt;/p>
+&lt;p>And that&amp;rsquo;s how you do it. I&amp;rsquo;m not entirely sure how it works yet either, but I am learning!&lt;/p></description></item><item><title>Technology I Use</title><link>https://jacobhell.com/technology_i_use/</link><pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/technology_i_use/</guid><description>&lt;h2 id="technology-i-own-and-use">Technology I Own and Use&lt;/h2>
+&lt;ul>
+&lt;li>Smartphone: Google Pixel 2&lt;/li>
+&lt;li>Computer: Dell Optiplex 790 with Radeon RX 560 GPU and a PSU I found on Amazon&lt;/li>
+&lt;li>Headphones: Sony MDR 1000X&lt;/li>
+&lt;li>Watch: Garmin 245&lt;/li>
+&lt;li>Ebook Reader: Amazon Kindle Generation 8&lt;/li>
+&lt;/ul>
+&lt;h2 id="my-preferred-software">My Preferred Software&lt;/h2>
+&lt;ul>
+&lt;li>Browser: Chrome with uBlock Origin on Desktop. Firefox with uBlock Origin on Mobile.&lt;/li>
+&lt;li>Code Editor: IntelliJ for Java. PyCharm for Python. vim for everything else.&lt;/li>
+&lt;/ul></description></item><item><title>Introduction to Simpson's Paradox</title><link>https://jacobhell.com/post/simpsons-paradox/</link><pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/simpsons-paradox/</guid><description>&lt;p>Introduction and how to avoid it.&lt;/p>
+&lt;h2 id="definition">Definition&lt;/h2>
+&lt;p>Simpson&amp;rsquo;s Paradox can be defined like so:&lt;/p>
+&lt;pre>&lt;code>a/b &amp;lt; A/B
+c/d &amp;lt; C/D, and
+(a+c) / (b/d) &amp;gt; (A+C) / (B+D)
+&lt;/code>&lt;/pre>&lt;p>Applying this to an example based loosely on real life:&lt;/p>
+&lt;pre>&lt;code>Suppose that a University is trying to discriminate in favour of women when hiring staff. It advertises positions in the Department of History and in the Department of Geography, and only those departments. Five men apply for the positions in History and one is hired, and eight women apply and two are hired. The success rate for men is twenty percent, and the success rate for women is twenty-five percent. The History Department has favoured women over men. In the Geography Department eight men apply and six are hired, and five women apply and four are hired. The success rate for men is seventy-five percent and for women it is eighty percent. The Geography Department has favoured women over men. Yet across the University as a whole 13 men and 13 women applied for jobs, and 7 men and 6 women were hired. The success rate for male applicants is greater than the success rate for female applicants.
+&lt;/code>&lt;/pre>&lt;p>This can be simplified as:&lt;/p>
+&lt;pre>&lt;code>History Major:
+Men: 1/5 &amp;lt; Women: 2/8
+Geography Major:
+Men: 6/8 &amp;lt; Women: 4/5
+University Total:
+Men: 7/13 &amp;gt; Women: 6/13
+&lt;/code>&lt;/pre>&lt;p>Above shows the paradox. How can women be favored in individual majors, but men are favored overall? The answer to this puzzle is that more women are applying for a competitive major, but more men are applying for a major with less competition. In other cases of Simpson&amp;rsquo;s Paradox, different confounding variables are the cause.&lt;/p>
+&lt;h2 id="avoiding-simpsons-paradox">Avoiding Simpson&amp;rsquo;s Paradox&lt;/h2>
+&lt;p>Assuming you can&amp;rsquo;t change the study, make sure that the results hold up to the subsets of the data. If there is a large discrepancy with the samples, weight the data accordingly.&lt;/p>
+&lt;p>Lastly, check for confounding variables, and check their interaction with your results. Here are some suggestions:&lt;/p>
+&lt;p>&lt;strong>Restriction&lt;/strong>: restrict the samples b only including certain subjects that have the same values of potential confounding variables.&lt;/p>
+&lt;p>&lt;strong>Matching&lt;/strong>: Match the subjects of treatment group with a counterpart in comparison group. The matched subjects must have the same values on the confounding variables.&lt;/p>
+&lt;p>&lt;strong>Statistical Control&lt;/strong>: Include potential confounders as variables in regression.&lt;/p>
+&lt;p>&lt;strong>Randomization&lt;/strong>: Assign treatment to a study randomly in a large number of subjects.&lt;/p></description></item><item><title>Running Spark Applications on Dockerized Spark</title><link>https://jacobhell.com/post/running-spark-applications-docker/</link><pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/running-spark-applications-docker/</guid><description>&lt;p>Sparking joy in Docker.&lt;/p>
+&lt;p>I&amp;rsquo;m getting into data engineering stuff. The biggest thing in data engineering right now is Spark. Spark lets you perform distributed processes. I consider it to be the Hadoop successor, since it&amp;rsquo;s so much faster.&lt;/p>
+&lt;p>Requirements:&lt;/p>
+&lt;ol>
+&lt;li>Docker&lt;/li>
+&lt;li>Scala version 2.12.12 (Spark doesn&amp;rsquo;t work with 2.13.* at the time of this writing)&lt;/li>
+&lt;/ol>
+&lt;h2 id="getting-dockerized-spark-running">Getting Dockerized Spark Running&lt;/h2>
+&lt;p>First, pull the docker image &lt;code>bitnami/spark&lt;/code>, using this command:&lt;/p>
+&lt;pre>&lt;code>docker pull bitnami/spark
+&lt;/code>&lt;/pre>&lt;p>It&amp;rsquo;s going to take awhile to download, so I suggest pulling up some Rick and Morty. Two episodes should do the trick.&lt;/p>
+&lt;p>Then run it, using this command:&lt;/p>
+&lt;pre>&lt;code>docker run -d bitnami/spark
+&lt;/code>&lt;/pre>&lt;p>&lt;code>-d&lt;/code> runs in detached mode, so you retain access to your terminal emulator. Docker prints out the hash, keep this handy.&lt;/p>
+&lt;h2 id="packaging-a-jar-using-sbt">Packaging a jar using sbt&lt;/h2>
+&lt;p>Go to a Scala program that you want to run in Spark. If you are in need of one, use this:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-scala" data-lang="scala">&lt;span style="color:#75715e">/* SimpleApp.scala */&lt;/span>
+&lt;span style="color:#66d9ef">import&lt;/span> org.apache.spark.sql.SparkSession
+&lt;span style="color:#66d9ef">object&lt;/span> &lt;span style="color:#a6e22e">SimpleApp&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">def&lt;/span> main&lt;span style="color:#f92672">(&lt;/span>args&lt;span style="color:#66d9ef">:&lt;/span> &lt;span style="color:#66d9ef">Array&lt;/span>&lt;span style="color:#f92672">[&lt;/span>&lt;span style="color:#66d9ef">String&lt;/span>&lt;span style="color:#f92672">])&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">val&lt;/span> logFile &lt;span style="color:#66d9ef">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;YOUR_SPARK_HOME/README.md&amp;#34;&lt;/span> &lt;span style="color:#75715e">// Should be some file on your system
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">val&lt;/span> spark &lt;span style="color:#66d9ef">=&lt;/span> &lt;span style="color:#a6e22e">SparkSession&lt;/span>&lt;span style="color:#f92672">.&lt;/span>builder&lt;span style="color:#f92672">.&lt;/span>appName&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Simple Application&amp;#34;&lt;/span>&lt;span style="color:#f92672">).&lt;/span>getOrCreate&lt;span style="color:#f92672">()&lt;/span>
+&lt;span style="color:#66d9ef">val&lt;/span> logData &lt;span style="color:#66d9ef">=&lt;/span> spark&lt;span style="color:#f92672">.&lt;/span>read&lt;span style="color:#f92672">.&lt;/span>textFile&lt;span style="color:#f92672">(&lt;/span>logFile&lt;span style="color:#f92672">).&lt;/span>cache&lt;span style="color:#f92672">()&lt;/span>
+&lt;span style="color:#66d9ef">val&lt;/span> numAs &lt;span style="color:#66d9ef">=&lt;/span> logData&lt;span style="color:#f92672">.&lt;/span>filter&lt;span style="color:#f92672">(&lt;/span>line &lt;span style="color:#66d9ef">=&amp;gt;&lt;/span> line&lt;span style="color:#f92672">.&lt;/span>contains&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;a&amp;#34;&lt;/span>&lt;span style="color:#f92672">)).&lt;/span>count&lt;span style="color:#f92672">()&lt;/span>
+&lt;span style="color:#66d9ef">val&lt;/span> numBs &lt;span style="color:#66d9ef">=&lt;/span> logData&lt;span style="color:#f92672">.&lt;/span>filter&lt;span style="color:#f92672">(&lt;/span>line &lt;span style="color:#66d9ef">=&amp;gt;&lt;/span> line&lt;span style="color:#f92672">.&lt;/span>contains&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;b&amp;#34;&lt;/span>&lt;span style="color:#f92672">)).&lt;/span>count&lt;span style="color:#f92672">()&lt;/span>
+println&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">s&amp;#34;Lines with a: &lt;/span>&lt;span style="color:#e6db74">$numAs&lt;/span>&lt;span style="color:#e6db74">, Lines with b: &lt;/span>&lt;span style="color:#e6db74">$numBs&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#f92672">)&lt;/span>
+spark&lt;span style="color:#f92672">.&lt;/span>stop&lt;span style="color:#f92672">()&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>I took this snippet from &lt;a href="https://spark.apache.org/docs/latest/quick-start.html">here&lt;/a>.&lt;/p>
+&lt;p>Package the program using &lt;code>sbt&lt;/code>:&lt;/p>
+&lt;pre>&lt;code>sbt package
+&lt;/code>&lt;/pre>&lt;h2 id="uploading-the-jar-and-running-the-spark-application">Uploading the jar and Running the Spark Application&lt;/h2>
+&lt;p>To upload the jar to the docker container, we are going to use the &lt;code>docker cp&lt;/code> command. This is where you need the hash.&lt;/p>
+&lt;p>Run this command:&lt;/p>
+&lt;pre>&lt;code>docker cp &amp;lt;jar_file_on_your_machine&amp;gt;.jar &amp;lt;hash&amp;gt;:/opt/bitnami/spark/app.jar
+&lt;/code>&lt;/pre>&lt;p>Then, shell into your docker container using the command:&lt;/p>
+&lt;pre>&lt;code>docker exec -it &amp;lt;hash&amp;gt; bash
+&lt;/code>&lt;/pre>&lt;p>Lastly, in your spark docker container, run this command:&lt;/p>
+&lt;pre>&lt;code>bin/spark-submit --class &amp;quot;SimpleApp&amp;quot; --master local[4] app.jar
+&lt;/code>&lt;/pre>&lt;p>If you see something similar to &lt;strong>Lines with a: 46, Lines with b: 23&lt;/strong>, then good job, it works! You are ready for more Spark adventures.&lt;/p></description></item><item><title>How to Use uBlock Origin to Limit Distractions</title><link>https://jacobhell.com/post/u-block-distraction/</link><pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/u-block-distraction/</guid><description>&lt;p>uBlock Origin is usually used to block unwanted ads. But it is also a powerful tool to increase productivity.&lt;/p>
+&lt;p>Like most people, I get distracted by shiny things easily. By &amp;ldquo;Shiny Things&amp;rdquo;, I mean interesting headlines, news articles, and videos.&lt;/p>
+&lt;p>I&amp;rsquo;m different though, because I know that I need to block the shiny things before my feeble human brain can see them. Luckily, I know of just the tool to help me.&lt;/p>
+&lt;h3 id="ublock-origin">uBlock Origin&lt;/h3>
+&lt;p>The author and maintainer of uBlock Origin, Raymond Hill, is dedicated to privacy. Unlike other ad blocking services, uBlock specifically refuses donations and &amp;ldquo;Approved Ads&amp;rdquo;. So you have no reason to worry that things will get unblocked.&lt;/p>
+&lt;h3 id="the-problem-i-had">The Problem I Had&lt;/h3>
+&lt;p>So I have a website that I go on frequently. It is called &lt;a href="https://stackoverflow.com/">StackOverflow&lt;/a>. It is a question and answer site for programming and computer problems. It is a part of a larger question and answer site called &lt;a href="https://stackexchange.com/">StackExchange&lt;/a>.&lt;/p>
+&lt;p>Unfortunately for those distracted by shiny things, StackOverflow has a &amp;ldquo;Hot Network Questions&amp;rdquo; section. This section has posts from other parts of StackExchange. The questions posted here are often very interesting, and they are difficult to resist clicking on.&lt;/p>
+&lt;p>Here&amp;rsquo;s an example:&lt;/p>
+&lt;p>&lt;img src="../../network_posts.png" alt="The bane of my existence">&lt;/p>
+&lt;p>As far as I know, there is no way to hide this section. Even if you have a StackOverflow account.&lt;/p>
+&lt;h3 id="blocking-distracting-things">Blocking Distracting Things&lt;/h3>
+&lt;p>It&amp;rsquo;s easy to block distracting things using uBlock Origin. Watch the gif below:&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../blocking_network_posts.gif" alt="blocking network posts gif" width="800" height="600">&lt;/div>
+&lt;p>I hope this helped on your quest to reduce distractions.&lt;/p></description></item><item><title>Flow: How Working from Home Has Made Me Productive</title><link>https://jacobhell.com/post/flow/</link><pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/flow/</guid><description>&lt;p>Working from home has been a boon for my productivity.&lt;/p>
+&lt;p>I&amp;rsquo;ve wanted to work from home since, well I started working. I&amp;rsquo;m introverted and dislike interruptions. I&amp;rsquo;m not good at small talk. I control the air conditioning. The reasons are endless.&lt;/p>
+&lt;p>Since the pandemic started, I&amp;rsquo;ve been working from home. I&amp;rsquo;ve enjoyed the reasons I listed above. However, I didn&amp;rsquo;t expect to be extremely productive.&lt;/p>
+&lt;p>I find myself most productive when in a &lt;a href="https://en.wikipedia.org/wiki/Flow_(psychology)">state of flow&lt;/a>. In this state, I really only notice myself and the monitor. The keyboard is just an extension of myself. No bug deters me. Unfortunately, I only attain this state for around 30 minutes in the office. This is due to a combination of interruptions and not being in complete control my environment.&lt;/p>
+&lt;p>For example, I can wear whatever clothes I want. If my head or eyes hurt, I can just go lay in bed for 10 minutes. If the lights are too bright, I can dim them. I couldn&amp;rsquo;t do that onsite.&lt;/p>
+&lt;p>Managing interruptions while working from home is easier. I only check my email 3 times per day at 8 am, 12 pm, and 4 pm. My phone number is available to members of my team, but I have the choice of answering calls. If called when I&amp;rsquo;m in a state of deep flow, I can text back that I&amp;rsquo;m not available. Then call when it works for me.&lt;/p>
+&lt;p>This might seem mean. But I&amp;rsquo;ve found most urgent emails and calls are not urgent. This is what Cal Newport (one of my favorite authors) thinks about &lt;a href="https://www.calnewport.com/blog/2008/02/15/fixed-schedule-productivity-how-i-accomplish-a-large-amount-of-work-in-a-small-number-of-work-hours/">keeping a fixed schedule&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>I’m not available.&lt;/strong> I often work in hidden nooks of the various libraries on campus. I check and respond to work e-mail only a few times a day. People have to wait for responses from me. It’s often hard to find me. Sometimes they get upset at first. But they don’t really need immediate access. And I will always respond within a reasonable timeframe and get them what they need. So they adjust. And I get things done.&lt;/p>
+&lt;/blockquote>
+&lt;p>With complete control over my environment and no interruptions, I have averaged 4 hours of flow per day! It&amp;rsquo;s probably the most productive I&amp;rsquo;ve been in my life.&lt;/p></description></item><item><title>Eclipse versus IntelliJ</title><link>https://jacobhell.com/post/eclipse-vs-intellij/</link><pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/eclipse-vs-intellij/</guid><description>&lt;p>Let&amp;rsquo;s compare these two IDEs.&lt;/p>
+&lt;h1 id="general-info">General Info&lt;/h1>
+&lt;h3 id="eclipse">Eclipse&lt;/h3>
+&lt;p>Eclipse was created by IBM and released in 2001. Eclipse natively supports Java, but has plugins for a ton of other languages. Eclipse is free and has no paid version.&lt;/p>
+&lt;h3 id="intellij">IntelliJ&lt;/h3>
+&lt;p>IntelliJ was released in 2001 by JetBrains. IntelliJ natively supports Java, Groovy, and Kotlin, but has plugins for a ton of other languages. In the paid version of IntelliJ, JavaScript, SQL, Ruby, and a few other languages are supported.&lt;/p>
+&lt;h1 id="debugging">Debugging&lt;/h1>
+&lt;h3 id="eclipse-1">Eclipse&lt;/h3>
+&lt;p>In Eclipse, to obtain the values of variables in scope requires you to either:&lt;/p>
+&lt;ul>
+&lt;li>Mouse over the variables and see the value&lt;/li>
+&lt;li>Add the variable name to the &amp;ldquo;expressions&amp;rdquo; window.&lt;/li>
+&lt;/ul>
+&lt;p>That&amp;rsquo;s too much manual work for this guy.&lt;/p>
+&lt;h3 id="intellij-1">IntelliJ&lt;/h3>
+&lt;p>In IntelliJ, all variables in Scope are already present in the &amp;ldquo;Variables&amp;rdquo; window. No manual work is required by me!&lt;/p>
+&lt;h1 id="refactoring">Refactoring&lt;/h1>
+&lt;h3 id="eclipse-2">Eclipse&lt;/h3>
+&lt;p>Eclipse has refactoring for renaming files and packages (and updating the name of the references in other files), and extracting code into super classes. It doesn&amp;rsquo;t offer much for refactoring the lines of code itself though.&lt;/p>
+&lt;p>It can also suggest things like unused variables, infinite loops, and unreachable code.&lt;/p>
+&lt;h3 id="intellij-2">IntelliJ&lt;/h3>
+&lt;p>IntelliJ offers much more options for creating super classes, even going into the member and inline code level.&lt;/p>
+&lt;p>IntelliJ offers suggestions for almost any line of code.&lt;/p>
+&lt;h1 id="windows">Windows&lt;/h1>
+&lt;h3 id="eclipse-3">Eclipse&lt;/h3>
+&lt;p>The biggest problem I have with Eclipse is something I call &amp;ldquo;Window Fatigue&amp;rdquo;. There are SO many windows in Eclipse, and they always end up in strange places. The concept of &amp;ldquo;Perspectives&amp;rdquo; makes this even more confusing!&lt;/p>
+&lt;p>For example, I will have the console window open while coding. Then when I run the program and start debugging, Eclipse will switch to the &amp;ldquo;debug&amp;rdquo; perspective. This opens and changes the position and size of all windows that are defined by the debug perspective. Once I&amp;rsquo;m done debugging, they all go back to the normal perspective.&lt;/p>
+&lt;p>It might just be me, but I continuously find myself moving stuff around when using Eclipse. And it really wears on me.&lt;/p>
+&lt;h3 id="intellij-3">IntelliJ&lt;/h3>
+&lt;p>In IntelliJ it&amp;rsquo;s harder to change the window positions. I haven&amp;rsquo;t found myself trying to move stuff around when coding. This is a good thing for me. I can&amp;rsquo;t be trusted with my constant window moving.&lt;/p>
+&lt;h1 id="usability">Usability&lt;/h1>
+&lt;h3 id="eclipse-4">Eclipse&lt;/h3>
+&lt;p>For whatever reason, loading and closing a project in Eclipse can cause problems. For example, sometimes after reopening a project, files will no longer be found. Or there will be random errors when trying to start a program, only fixed by removing the project and re importing it.&lt;/p>
+&lt;p>I&amp;rsquo;m not sure why this is. I have spent many hours trying to figure out issues with code, only for it to be an Eclipse problem.&lt;/p>
+&lt;h3 id="intellij-4">IntelliJ&lt;/h3>
+&lt;p>Never had a random problem like this in IntelliJ. However, due to Eclipse being the most used IDE for some time, figuring out a problem is relatively easy. Since there is a good chance that someone else has had the same problem and posted their issue on the internet.&lt;/p>
+&lt;h1 id="conclusion">Conclusion&lt;/h1>
+&lt;p>I didn&amp;rsquo;t intend for this post to be dropping bombs on Eclipse. IntelliJ is just a lot better in my opinion. The only major drawback is that if you are not doing desktop Java development, you need to buy the paid version to assist with your coding.&lt;/p></description></item><item><title>How to Get OpenJFX Working in Eclipse</title><link>https://jacobhell.com/post/javafx-eclipse/</link><pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/javafx-eclipse/</guid><description>&lt;p>Get the power of JavaFX working in Eclipse. Without the licensing requirements of Oracle JDK.&lt;/p>
+&lt;h2 id="requirements">Requirements&lt;/h2>
+&lt;p>This walkthrough assumes you have Eclipse and a JDK installed.&lt;/p>
+&lt;h2 id="downloading-openjfx">Downloading OpenJFX&lt;/h2>
+&lt;p>Download the OpenJFX SDK &lt;a href="https://gluonhq.com/products/javafx/">here&lt;/a>. The current LTS version, 14, requires at least JDK 11.&lt;/p>
+&lt;h2 id="create-a-java-project">Create a Java Project&lt;/h2>
+&lt;ol>
+&lt;li>In eclipse, create a Java project &lt;code>File -&amp;gt; New -&amp;gt; Java Project&lt;/code>&lt;/li>
+&lt;li>On the &lt;code>src&lt;/code> folder, right click and create a package named &lt;code>main&lt;/code>. Then create a class named &lt;code>Main&lt;/code>.&lt;/li>
+&lt;li>In &lt;code>Main.java&lt;/code> replace the contents with:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#f92672">package&lt;/span> main&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">import&lt;/span> javafx.application.Application&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">import&lt;/span> javafx.stage.Stage&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Main&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> Application &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">start&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Stage primaryStage&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#66d9ef">throws&lt;/span> Exception&lt;span style="color:#f92672">{&lt;/span>
+primaryStage&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setTitle&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+primaryStage&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">show&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">[]&lt;/span> args&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+launch&lt;span style="color:#f92672">(&lt;/span>args&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="importing-the-openjfx-sdk">Importing the OpenJFX SDK&lt;/h2>
+&lt;ol>
+&lt;li>Right click your java project, and select &lt;code>Properties&lt;/code>.&lt;/li>
+&lt;li>Select &lt;code>Java Build Path&lt;/code> and then &lt;code>Librares&lt;/code>.&lt;/li>
+&lt;li>Select &lt;code>Add Library...&lt;/code>. Then Select &lt;code>User Library&lt;/code>.&lt;/li>
+&lt;li>Hit &lt;code>Next&lt;/code> then Select &lt;code>User Libraries...&lt;/code>.&lt;/li>
+&lt;li>Select &lt;code>New...&lt;/code> and name it &lt;code>JavaFX&lt;/code>.&lt;/li>
+&lt;li>Select &lt;code>JavaFX&lt;/code> then select &lt;code>Add External Jars...&lt;/code>.&lt;/li>
+&lt;li>A file selection dialog opens. Go to &lt;code>OpenJFXLocation/lib&lt;/code> and select all the jar files.&lt;/li>
+&lt;li>Select &lt;code>Apply and Close&lt;/code>&lt;/li>
+&lt;li>Check &lt;code>JavaFX&lt;/code> and click &lt;code>Finish&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="adding-vm-arguments">Adding VM Arguments&lt;/h2>
+&lt;ol>
+&lt;li>Select &lt;code>Run -&amp;gt; Run Configurations...&lt;/code>&lt;/li>
+&lt;li>Right Click &lt;code>Java Application&lt;/code> and select &lt;code>New Configuration&lt;/code>.&lt;/li>
+&lt;li>Under &lt;code>Main class&lt;/code> search for &lt;code>Main.java&lt;/code>.&lt;/li>
+&lt;li>Select the &lt;code>Arguments&lt;/code> tab.&lt;/li>
+&lt;li>Paste &lt;code>--module-path &amp;quot;OpenJFXLocation\lib&amp;quot; --add-modules javafx.controls,javafx.fxml&lt;/code> into &lt;code>VM arguments&lt;/code>.&lt;/li>
+&lt;/ol>
+&lt;h3 id="conclusion">Conclusion&lt;/h3>
+&lt;p>Select &lt;code>Run&lt;/code> and you should be greeted with a window with the title &lt;code>Hello World&lt;/code>!&lt;/p>
+&lt;p>A lot of work to get this working. But at least no Oracle licensing was involved!&lt;/p></description></item><item><title>Create a New Hugo Site on Netlify in 7 Easy Steps</title><link>https://jacobhell.com/post/hugo-site-netlify/</link><pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/hugo-site-netlify/</guid><description>&lt;p>Hugo is a great static site generator. Netlify is an amazing host for static sites. Let&amp;rsquo;s combine the power of them.&lt;/p>
+&lt;h3 id="requirements">Requirements&lt;/h3>
+&lt;p>Make sure that &lt;code>hugo&lt;/code> and &lt;code>git&lt;/code> are installed, and can be called from your command line.&lt;/p>
+&lt;h4 id="hugo">Hugo&lt;/h4>
+&lt;p>Run this command:&lt;/p>
+&lt;pre>&lt;code>hugo version
+&lt;/code>&lt;/pre>&lt;p>If installed, the version should print. This is what printed out for me:&lt;/p>
+&lt;pre>&lt;code>Hugo Static Site Generator v0.67.1-4F44227B windows/amd64 BuildDate: 2020-03-15T19:32:32Z
+&lt;/code>&lt;/pre>&lt;p>Otherwise, &lt;a href="https://gohugo.io/getting-started/installing/">here&lt;/a> are the install instructions&lt;/p>
+&lt;h4 id="git">Git&lt;/h4>
+&lt;p>Run this command:&lt;/p>
+&lt;pre>&lt;code>git --version
+&lt;/code>&lt;/pre>&lt;p>If installed, the version should print. This is what printed out for me:&lt;/p>
+&lt;pre>&lt;code>git version 2.21.0.windows.1
+&lt;/code>&lt;/pre>&lt;p>Otherwise, &lt;a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here&lt;/a> are the install instructions.&lt;/p>
+&lt;h3 id="step-1-create-new-website">Step 1: Create New Website&lt;/h3>
+&lt;p>Open your command line, and run:&lt;/p>
+&lt;pre>&lt;code>hugo new site &amp;lt;sitename&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>Replace &lt;code>&amp;lt;sitename&amp;gt;&lt;/code> with the name of your site. My blog&amp;rsquo;s name is Software Enlightenment, so I used &lt;code>softwareenlightenment&lt;/code>.&lt;/p>
+&lt;h3 id="step-2-add-a-theme-to-your-website">Step 2: Add a Theme to Your Website&lt;/h3>
+&lt;p>In the same command line window, run:&lt;/p>
+&lt;pre>&lt;code>cd &amp;lt;sitename&amp;gt;
+git init
+git submodule add https://github.com/matsuyoshi30/harbor.git themes/ananke
+echo 'theme = &amp;quot;ananke&amp;quot;' &amp;gt;&amp;gt; config.toml
+&lt;/code>&lt;/pre>&lt;p>Doing this:&lt;/p>
+&lt;ol>
+&lt;li>Makes &lt;code>&amp;lt;sitename&amp;gt;&lt;/code> a git repo.&lt;/li>
+&lt;li>Adds the &lt;code>ananke&lt;/code> theme to you website.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="https://themes.gohugo.io/">Here&lt;/a> are the list of themes, if you don&amp;rsquo;t want to use &lt;code>ananke&lt;/code>.&lt;/p>
+&lt;h3 id="step-3-verify-website-works">Step 3: Verify Website Works&lt;/h3>
+&lt;p>In the same command line window, run:&lt;/p>
+&lt;pre>&lt;code>hugo serve
+&lt;/code>&lt;/pre>&lt;p>Then in a browser, go to &lt;code>localhost:1313&lt;/code>. You should see this:&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../hugo-site-netlify/hugo_new_site.PNG" alt="Hugo New Site" width="600" height="450">&lt;/div>
+&lt;h3 id="step-4-create-netlifytoml">Step 4: Create netlify.toml&lt;/h3>
+&lt;p>In the &lt;code>&amp;lt;sitename&amp;gt;&lt;/code> directory (where &lt;code>config.toml&lt;/code> is), make a file named &lt;code>netlify.toml&lt;/code>.&lt;/p>
+&lt;p>Copy and paste this into &lt;code>netlify.toml&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">build&lt;/span>]
+&lt;span style="color:#a6e22e">publish&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;public&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">command&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;hugo --gc --minify&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">production&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_VERSION&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;0.68.3&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">HUGO_ENV&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;production&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">HUGO_ENABLEGITINFO&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;true&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">split1&lt;/span>]
+&lt;span style="color:#a6e22e">command&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;hugo --gc --minify --enableGitInfo&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">split1&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_VERSION&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;0.68.3&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">HUGO_ENV&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;production&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">deploy&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">-&lt;/span>&lt;span style="color:#a6e22e">preview&lt;/span>]
+&lt;span style="color:#a6e22e">command&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">deploy&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">-&lt;/span>&lt;span style="color:#a6e22e">preview&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_VERSION&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;0.68.3&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">branch&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">-&lt;/span>&lt;span style="color:#a6e22e">deploy&lt;/span>]
+&lt;span style="color:#a6e22e">command&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;hugo --gc --minify -b $DEPLOY_PRIME_URL&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">branch&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">-&lt;/span>&lt;span style="color:#a6e22e">deploy&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_VERSION&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;0.68.3&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">next&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_ENABLEGITINFO&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The settings above were taken from &lt;a href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify">here&lt;/a>.&lt;/p>
+&lt;h3 id="step-5-push-to-github">Step 5: Push to GitHub&lt;/h3>
+&lt;p>Make a new repository on GitHub.&lt;/p>
+&lt;p>You will be taken to the quick setup page. Copy the https link:&lt;/p>
+&lt;p>&lt;img src="../../hugo-site-netlify/new_repository.PNG" alt="GitHub quick setup page">&lt;/p>
+&lt;p>In the command line window, run:&lt;/p>
+&lt;pre>&lt;code>git remote add origin &amp;lt;https link you copied&amp;gt;
+git add .
+git commit -m 'initial commit'
+git push -u origin master
+&lt;/code>&lt;/pre>&lt;p>Verify that your code was pushed.&lt;/p>
+&lt;h3 id="step-6-linking-netlify-and-github">Step 6: Linking Netlify and GitHub&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Open Netlify in your web browser, then go to &lt;code>Sites&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;code>New site from Git&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;code>GitHub&lt;/code>&lt;/p>
+&lt;p>&lt;img src="../../hugo-site-netlify/connect_to_github.PNG" alt="Linking GitHub">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Enter your GitHub credentials&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Choose the site repository&lt;/p>
+&lt;p>&lt;img src="../../hugo-site-netlify/pick_repository.PNG" alt="Choosing the Repository">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click the &lt;code>&amp;gt;&lt;/code> Icon&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Validate that &lt;code>Branch to deploy&lt;/code> is &lt;code>master&lt;/code>.&lt;/p>
+&lt;ol>
+&lt;li>build command is &lt;code>hugo --gc --minify&lt;/code>&lt;/li>
+&lt;li>publish directory is &lt;code>public&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="../../hugo-site-netlify/deploy_settings.PNG" alt="Deploy Settings">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;code>Deploy site&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-7-site-should-be-live">Step 7: Site Should be Live!&lt;/h3>
+&lt;p>Should see this page:&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../hugo-site-netlify/deploying_site.PNG" alt="Deploying visual" width="600" height="450">&lt;/div>
+&lt;p>Once Netlify finishes deploying, should see this:&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../hugo-site-netlify/deploy_published.PNG" alt="Deploying Finished" width="600" height="450">&lt;/div>
+&lt;p>Click &lt;code>Preview deploy&lt;/code>. You will be taken to your live site!&lt;/p>
+&lt;h3 id="conclusion">Conclusion&lt;/h3>
+&lt;p>There&amp;rsquo;s not much in life that you can do in 7 steps. You can rest well at night knowing that hosting hugo sites on Netlify is an exception.&lt;/p>
+&lt;p>Let me know if you have problems performing these steps.&lt;/p></description></item><item><title>Java Programming is 90% Easier with Project Lombok</title><link>https://jacobhell.com/post/project-lombok/</link><pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/project-lombok/</guid><description>&lt;p>Writing in Java is a pain in the butt. Even simple code is verbose. Project Lombok condenses Java syntax. This reduction can be up to 90% of normal java code.&lt;/p>
+&lt;p>Let&amp;rsquo;s see how Lombok does this.&lt;/p>
+&lt;h2 id="setting-up">Setting Up&lt;/h2>
+&lt;p>I&amp;rsquo;m using maven. &lt;a href="https://projectlombok.org/setup/maven">Here&lt;/a> are the Project Lombok maven docs.&lt;/p>
+&lt;p>I added this dependency:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-xml" data-lang="xml">&lt;span style="color:#f92672">&amp;lt;dependency&amp;gt;&lt;/span>
+&lt;span style="color:#f92672">&amp;lt;groupId&amp;gt;&lt;/span>org.projectlombok&lt;span style="color:#f92672">&amp;lt;/groupId&amp;gt;&lt;/span>
+&lt;span style="color:#f92672">&amp;lt;artifactId&amp;gt;&lt;/span>lombok&lt;span style="color:#f92672">&amp;lt;/artifactId&amp;gt;&lt;/span>
+&lt;span style="color:#f92672">&amp;lt;version&amp;gt;&lt;/span>1.18.12&lt;span style="color:#f92672">&amp;lt;/version&amp;gt;&lt;/span>
+&lt;span style="color:#f92672">&amp;lt;scope&amp;gt;&lt;/span>provided&lt;span style="color:#f92672">&amp;lt;/scope&amp;gt;&lt;/span>
+&lt;span style="color:#f92672">&amp;lt;/dependency&amp;gt;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>My IDE is Eclipse.&lt;/p>
+&lt;p>&lt;a href="https://projectlombok.org/setup/eclipse">Here&lt;/a> are the Eclipse docs.&lt;/p>
+&lt;h2 id="cleaning-up-accessor-methods">Cleaning Up Accessor Methods&lt;/h2>
+&lt;p>My IDE has generated thousands of getters and setters for me. However, going through Eclipse&amp;rsquo;s UI to generate them is a struggle. Good thing that Lombok completely removes the need to do this!&lt;/p>
+&lt;p>To generate accessor methods for the whole class:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#a6e22e">@Getter&lt;/span>
+&lt;span style="color:#a6e22e">@Setter&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">GetterSetterExample&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> age &lt;span style="color:#f92672">=&lt;/span> 10&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Customizing visibility:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">GetterSetterExample&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#a6e22e">@Getter&lt;/span> &lt;span style="color:#a6e22e">@Setter&lt;/span> &lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> age &lt;span style="color:#f92672">=&lt;/span> 10&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#a6e22e">@Setter&lt;/span>&lt;span style="color:#f92672">(&lt;/span>AccessLevel&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">PROTECTED&lt;/span>&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#66d9ef">private&lt;/span> String name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span> &lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> String&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">format&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;%s (age: %d)&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> name&lt;span style="color:#f92672">,&lt;/span> age&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="null-checking">Null Checking&lt;/h2>
+&lt;p>Every time I see &lt;code>NullPointerException&lt;/code> with unhelpful information, my blood pressure spikes. We can use the &lt;code>@NonNull&lt;/code> attribute to make things easier.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">getStringLength&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#a6e22e">@NonNull&lt;/span> String str&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> str&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">length&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>If I do this:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">getStringLength&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">null&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>I get this:&lt;/p>
+&lt;pre>&lt;code>Exception in thread &amp;quot;main&amp;quot; java.lang.NullPointerException: str is marked non-null but is null
+&lt;/code>&lt;/pre>&lt;h2 id="tostring">toString&lt;/h2>
+&lt;p>Another bane of a Java Developer&amp;rsquo;s existence: toString() methods. Like the accessor methods, just an annotation is necessary.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#a6e22e">@ToString&lt;/span>&lt;span style="color:#f92672">(&lt;/span>includeFieldNames &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Square&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> width&lt;span style="color:#f92672">,&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">Square&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> width&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> height&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">width&lt;/span> &lt;span style="color:#f92672">=&lt;/span> width&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">height&lt;/span> &lt;span style="color:#f92672">=&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Doing this:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">Square square &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Square&lt;span style="color:#f92672">(&lt;/span>5&lt;span style="color:#f92672">,&lt;/span> 10&lt;span style="color:#f92672">);&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>square&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Will print out:&lt;/p>
+&lt;pre>&lt;code>Square(width=5, height=10)
+&lt;/code>&lt;/pre>&lt;h2 id="constructors">Constructors&lt;/h2>
+&lt;p>There can&amp;rsquo;t be more right? Well, there is. Even constructors aren&amp;rsquo;t immune to the power of Lombok.&lt;/p>
+&lt;p>Creating a constructor for all variables:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#a6e22e">@AllArgsConstructor&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Square&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> width&lt;span style="color:#f92672">,&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>No argument constructor:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#a6e22e">@NoArgsConstructor&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Square&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> width&lt;span style="color:#f92672">,&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>@RequiredArgsConstructor&lt;/code> will create a constructor for variables that are &lt;code>final&lt;/code> or have &lt;code>@NonNull&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#a6e22e">@RequiredArgsConstructor&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Square&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> width&lt;span style="color:#f92672">,&lt;/span> height&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="data-the-mother-of-all-annotations">@Data, the Mother of All Annotations&lt;/h2>
+&lt;p>Still too much code for you? Well, &lt;code>@Data&lt;/code> combines &lt;code>@ToString&lt;/code>, &lt;code>@Getter&lt;/code>, &lt;code>@Setter&lt;/code>, and &lt;code>@RequiredArgsConstructor&lt;/code>!&lt;/p>
+&lt;p>So this evil piece of Java code (117 lines):&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">DataExample&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> String name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> age&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> score&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String&lt;span style="color:#f92672">[]&lt;/span> tags&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">DataExample&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String name&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">name&lt;/span> &lt;span style="color:#f92672">=&lt;/span> name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setAge&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> age&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">age&lt;/span> &lt;span style="color:#f92672">=&lt;/span> age&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">getAge&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">age&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setScore&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">double&lt;/span> score&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">score&lt;/span> &lt;span style="color:#f92672">=&lt;/span> score&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> &lt;span style="color:#a6e22e">getScore&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">score&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String&lt;span style="color:#f92672">[]&lt;/span> &lt;span style="color:#a6e22e">getTags&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">tags&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setTags&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">[]&lt;/span> tags&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">tags&lt;/span> &lt;span style="color:#f92672">=&lt;/span> tags&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span> &lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;DataExample(&amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;, &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getAge&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;, &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getScore&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;, &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> Arrays&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">deepToString&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getTags&lt;/span>&lt;span style="color:#f92672">())&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;)&amp;#34;&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">protected&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> &lt;span style="color:#a6e22e">canEqual&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Object other&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> other &lt;span style="color:#66d9ef">instanceof&lt;/span> DataExample&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> &lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Object o&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(&lt;/span>o &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(!(&lt;/span>o &lt;span style="color:#66d9ef">instanceof&lt;/span> DataExample&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+DataExample other &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>DataExample&lt;span style="color:#f92672">)&lt;/span> o&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(!&lt;/span>other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">canEqual&lt;/span>&lt;span style="color:#f92672">((&lt;/span>Object&lt;span style="color:#f92672">)&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#f92672">?&lt;/span> other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#f92672">!&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()))&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getAge&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getAge&lt;/span>&lt;span style="color:#f92672">())&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(&lt;/span>Double&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">compare&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getScore&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getScore&lt;/span>&lt;span style="color:#f92672">())&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> 0&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(!&lt;/span>Arrays&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">deepEquals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getTags&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getTags&lt;/span>&lt;span style="color:#f92672">()))&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">hashCode&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">final&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> PRIME &lt;span style="color:#f92672">=&lt;/span> 59&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> result &lt;span style="color:#f92672">=&lt;/span> 1&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">final&lt;/span> &lt;span style="color:#66d9ef">long&lt;/span> temp1 &lt;span style="color:#f92672">=&lt;/span> Double&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">doubleToLongBits&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getScore&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>result&lt;span style="color:#f92672">*&lt;/span>PRIME&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#f92672">?&lt;/span> 43 &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">hashCode&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>result&lt;span style="color:#f92672">*&lt;/span>PRIME&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getAge&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>result&lt;span style="color:#f92672">*&lt;/span>PRIME&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>&lt;span style="color:#f92672">)(&lt;/span>temp1 &lt;span style="color:#f92672">^&lt;/span> &lt;span style="color:#f92672">(&lt;/span>temp1 &lt;span style="color:#f92672">&amp;gt;&amp;gt;&amp;gt;&lt;/span> 32&lt;span style="color:#f92672">));&lt;/span>
+result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>result&lt;span style="color:#f92672">*&lt;/span>PRIME&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">+&lt;/span> Arrays&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">deepHashCode&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getTags&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> result&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Exercise&lt;/span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> String name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> T value&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#a6e22e">Exercise&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String name&lt;span style="color:#f92672">,&lt;/span> T value&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">name&lt;/span> &lt;span style="color:#f92672">=&lt;/span> name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">value&lt;/span> &lt;span style="color:#f92672">=&lt;/span> value&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span> Exercise&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">of&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String name&lt;span style="color:#f92672">,&lt;/span> T value&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Exercise&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;(&lt;/span>name&lt;span style="color:#f92672">,&lt;/span> value&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> T &lt;span style="color:#a6e22e">getValue&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">value&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span> &lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Exercise(name=&amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;, value=&amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getValue&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;)&amp;#34;&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">protected&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> &lt;span style="color:#a6e22e">canEqual&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Object other&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> other &lt;span style="color:#66d9ef">instanceof&lt;/span> Exercise&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> &lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Object o&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(&lt;/span>o &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(!(&lt;/span>o &lt;span style="color:#66d9ef">instanceof&lt;/span> Exercise&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+Exercise&lt;span style="color:#f92672">&amp;lt;?&amp;gt;&lt;/span> other &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>Exercise&lt;span style="color:#f92672">&amp;lt;?&amp;gt;)&lt;/span> o&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(!&lt;/span>other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">canEqual&lt;/span>&lt;span style="color:#f92672">((&lt;/span>Object&lt;span style="color:#f92672">)&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#f92672">?&lt;/span> other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getValue&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#f92672">!&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()))&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getValue&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#f92672">?&lt;/span> other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getValue&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#f92672">!&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getValue&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>other&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getValue&lt;/span>&lt;span style="color:#f92672">()))&lt;/span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">hashCode&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">final&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> PRIME &lt;span style="color:#f92672">=&lt;/span> 59&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> result &lt;span style="color:#f92672">=&lt;/span> 1&lt;span style="color:#f92672">;&lt;/span>
+result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>result&lt;span style="color:#f92672">*&lt;/span>PRIME&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#f92672">?&lt;/span> 43 &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getName&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">hashCode&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>result&lt;span style="color:#f92672">*&lt;/span>PRIME&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getValue&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span> &lt;span style="color:#f92672">?&lt;/span> 43 &lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getValue&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">hashCode&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> result&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Turns into this friendly snippet (13 lines):&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#a6e22e">@Data&lt;/span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">DataExample&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> String name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#a6e22e">@Setter&lt;/span>&lt;span style="color:#f92672">(&lt;/span>AccessLevel&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">PACKAGE&lt;/span>&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> age&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">double&lt;/span> score&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String&lt;span style="color:#f92672">[]&lt;/span> tags&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#a6e22e">@ToString&lt;/span>&lt;span style="color:#f92672">(&lt;/span>includeFieldNames&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#a6e22e">@Data&lt;/span>&lt;span style="color:#f92672">(&lt;/span>staticConstructor&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;of&amp;#34;&lt;/span>&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Exercise&lt;/span>&lt;span style="color:#f92672">&amp;lt;&lt;/span>T&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> String name&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> T value&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>&lt;a href="https://projectlombok.org/">Project Lombok&lt;/a> is my best find this year. But wait, there&amp;rsquo;s more!&lt;/p>
+&lt;p>The &lt;a href="https://projectlombok.org/features/all">documentation&lt;/a> is fantastic and has further features to sink your teeth into.&lt;/p></description></item><item><title>The Chain of Responsibility Pattern Makes Hard Validation Easy</title><link>https://jacobhell.com/post/intro-chain-of-responsibility/</link><pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/intro-chain-of-responsibility/</guid><description>&lt;p>I like my validation workflow the same way I like my IKEA tables. Easy to setup and with a cool name. Though the Chain of Responsibility is no &lt;a href="https://www.ikea.com/us/en/p/godfjord-bed-frame-gray-s99256172/">Godfjord&lt;/a>, it is pretty easy to use.&lt;/p>
+&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>Hello professional computer touchers.&lt;/p>
+&lt;p>A great &lt;a href="https://refactoring.guru/design-patterns/chain-of-responsibility">intro&lt;/a> has already been written for Chain of Responsibility. I highly recommend Refactoring.Guru for their other articles too.&lt;/p>
+&lt;h2 id="my-two-problems">My Two Problems&lt;/h2>
+&lt;p>I&amp;rsquo;ve got a backend written in Java that takes in a username and password. This backend authenticates users and returns a token.&lt;/p>
+&lt;p>I was happy to get it done and it was easy to implement. Unfortunately my happiness was short-lived. Because my site is now under &lt;strong>attack&lt;/strong> by hackers.&lt;/p>
+&lt;p>If that wasn&amp;rsquo;t bad enough, I forgot to pay the bill for the VPS hosting my database. Now they&amp;rsquo;ve downgraded my service.&lt;/p>
+&lt;h2 id="the-solutions">The Solutions&lt;/h2>
+&lt;p>Here&amp;rsquo;s what I&amp;rsquo;ve got to do:&lt;/p>
+&lt;ol>
+&lt;li>Prevent the usernames of known hackers from logging in.&lt;/li>
+&lt;li>Cache authenticated usernames for less DB reads.&lt;/li>
+&lt;/ol>
+&lt;h2 id="the-pojos">The POJOs&lt;/h2>
+&lt;p>The POJO that stores the authentication request:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">UserAuthenticationRequest&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String username&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String password&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">UserAuthenticationRequest&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String username&lt;span style="color:#f92672">,&lt;/span> String password&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">username&lt;/span> &lt;span style="color:#f92672">=&lt;/span> username&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">password&lt;/span> &lt;span style="color:#f92672">=&lt;/span> password&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getUsername&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> username&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getPassword&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> password&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The POJO that stores the authentication response:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">UserAuthenticationResult&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String token&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String username&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> authenticated&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getUsername&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> username&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setUsername&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String username&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">username&lt;/span> &lt;span style="color:#f92672">=&lt;/span> username&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getToken&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> token&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setToken&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String token&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">token&lt;/span> &lt;span style="color:#f92672">=&lt;/span> token&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> &lt;span style="color:#a6e22e">isAuthenticated&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> authenticated&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setAuthenticated&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">boolean&lt;/span> authenticated&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">authenticated&lt;/span> &lt;span style="color:#f92672">=&lt;/span> authenticated&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">()&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Username: &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> username
+&lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;\nToken: &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> token
+&lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;\nIsAuthenticated: &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> authenticated&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="chain-of-responsibility-implementation">Chain of Responsibility Implementation&lt;/h2>
+&lt;p>The Chain of Responsibility pattern first needs an abstract &lt;code>Handler&lt;/code> class. My other Handlers will extend from this class.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">abstract&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">UserAuthenticationHandler&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> UserAuthenticationHandler next&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">UserAuthenticationHandler&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationHandler next&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">next&lt;/span> &lt;span style="color:#f92672">=&lt;/span> next&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> UserAuthenticationResult &lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationRequest request&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> next&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Should do the trick.&lt;/p>
+&lt;p>Let&amp;rsquo;s write some code to deal with those pesky hackers. The handler should return a UserAuthenticationResult with authenticate set to &lt;code>false&lt;/code> if they are up to no good.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">UsernameBannedHandler&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> UserAuthenticationHandler &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> List&lt;span style="color:#f92672">&amp;lt;&lt;/span>String&lt;span style="color:#f92672">&amp;gt;&lt;/span> bannedUsernames&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">UsernameBannedHandler&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationHandler next&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">(&lt;/span>next&lt;span style="color:#f92672">);&lt;/span>
+bannedUsernames &lt;span style="color:#f92672">=&lt;/span> List&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">of&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;jakehell&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;bannedUser&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;jakehell2&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> UserAuthenticationResult &lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationRequest request&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>isUsernameBanned&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">))&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> getAuthenticationFailureResult&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> &lt;span style="color:#a6e22e">isUsernameBanned&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationRequest request&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> bannedUsernames&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">contains&lt;/span>&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getUsername&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> UserAuthenticationResult &lt;span style="color:#a6e22e">getAuthenticationFailureResult&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationRequest request&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+UserAuthenticationResult result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> UserAuthenticationResult&lt;span style="color:#f92672">();&lt;/span>
+result&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setUsername&lt;/span>&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getUsername&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+result&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setAuthenticated&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> result&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>That takes care of my first problem.&lt;/p>
+&lt;p>Now to check if the username is cached. This handler should return the cached username and token.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">UserCachedHandler&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> UserAuthenticationHandler &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> Map&lt;span style="color:#f92672">&amp;lt;&lt;/span>String&lt;span style="color:#f92672">,&lt;/span> String&lt;span style="color:#f92672">&amp;gt;&lt;/span> usernameToken&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">UserCachedHandler&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationHandler next&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">(&lt;/span>next&lt;span style="color:#f92672">);&lt;/span>
+usernameToken &lt;span style="color:#f92672">=&lt;/span> Map&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">of&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cachedUser&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;cachedUserToken&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;jakehell4&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;token5&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> UserAuthenticationResult &lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationRequest request&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+String username &lt;span style="color:#f92672">=&lt;/span> request&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getUsername&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>usernameToken&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">containsKey&lt;/span>&lt;span style="color:#f92672">(&lt;/span>username&lt;span style="color:#f92672">))&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> getSuccessfulUserAuthenticationResult&lt;span style="color:#f92672">(&lt;/span>username&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> UserAuthenticationResult &lt;span style="color:#a6e22e">getSuccessfulUserAuthenticationResult&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String username&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+UserAuthenticationResult result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> UserAuthenticationResult&lt;span style="color:#f92672">();&lt;/span>
+result&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setUsername&lt;/span>&lt;span style="color:#f92672">(&lt;/span>username&lt;span style="color:#f92672">);&lt;/span>
+result&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setToken&lt;/span>&lt;span style="color:#f92672">(&lt;/span>usernameToken&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>username&lt;span style="color:#f92672">));&lt;/span>
+result&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setAuthenticated&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> result&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Lastly, I need to actually try to authenticate the user.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">AuthenticateUserHandler&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> UserAuthenticationHandler &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#a6e22e">AuthenticateUserHandler&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationHandler next&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">(&lt;/span>next&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> UserAuthenticationResult &lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationRequest request&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>authenticateUser&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">))&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> createSuccessfulResult&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">boolean&lt;/span> &lt;span style="color:#a6e22e">authenticateUser&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationRequest request&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getUsername&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;authenticatedUser&amp;#34;&lt;/span>&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> request&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getPassword&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;password&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">false&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> UserAuthenticationResult &lt;span style="color:#a6e22e">createSuccessfulResult&lt;/span>&lt;span style="color:#f92672">(&lt;/span>UserAuthenticationRequest request&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+UserAuthenticationResult result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> UserAuthenticationResult&lt;span style="color:#f92672">();&lt;/span>
+result&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setAuthenticated&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+result&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setUsername&lt;/span>&lt;span style="color:#f92672">(&lt;/span>request&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getUsername&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+result&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setToken&lt;/span>&lt;span style="color:#f92672">(&lt;/span>generateToken&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> result&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String &lt;span style="color:#a6e22e">generateToken&lt;/span>&lt;span style="color:#f92672">()&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;token&amp;#34;&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>For some reason, only &lt;code>authenticatedUser&lt;/code> can login. Oh well, different problem for a different day.&lt;/p>
+&lt;h2 id="creating-the-chain">Creating the Chain&lt;/h2>
+&lt;p>Here is the chain:&lt;/p>
+&lt;p>&lt;code>UsernameBannedHandler -&amp;gt; UserCachedHandler -&amp;gt; UserAuthenticationHandler&lt;/code>&lt;/p>
+&lt;p>I also put &lt;code>ForceAuthenticationFailureHandler&lt;/code> after &lt;code>UserAuthenticationHandler&lt;/code>. Since authentication failed if it got to that handler.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">[]&lt;/span> args&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+ForceAuthenticationFailureHandler forceAuthenticationFailureHandler &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> ForceAuthenticationFailureHandler&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">null&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+AuthenticateUserHandler authenticateUserHandler &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> AuthenticateUserHandler&lt;span style="color:#f92672">(&lt;/span>forceAuthenticationFailureHandler&lt;span style="color:#f92672">);&lt;/span>
+UserCachedHandler userCachedHandler &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> UserCachedHandler&lt;span style="color:#f92672">(&lt;/span>authenticateUserHandler&lt;span style="color:#f92672">);&lt;/span>
+UsernameBannedHandler usernameBannedHandler &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> UsernameBannedHandler&lt;span style="color:#f92672">(&lt;/span>userCachedHandler&lt;span style="color:#f92672">);&lt;/span>
+UserAuthenticationRequest banned &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> UserAuthenticationRequest&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;bannedUser&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;password&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+UserAuthenticationRequest cached &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> UserAuthenticationRequest&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cachedUser&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;password&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+UserAuthenticationRequest authenticated &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> UserAuthenticationRequest&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;authenticatedUser&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;password&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+UserAuthenticationRequest failure &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> UserAuthenticationRequest&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;authenticateFailure&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#e6db74">&amp;#34;password&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+UserAuthenticationResult bannedResult &lt;span style="color:#f92672">=&lt;/span> usernameBannedHandler&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>banned&lt;span style="color:#f92672">);&lt;/span>
+UserAuthenticationResult cachedResult &lt;span style="color:#f92672">=&lt;/span> usernameBannedHandler&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>cached&lt;span style="color:#f92672">);&lt;/span>
+UserAuthenticationResult authenticatedResult &lt;span style="color:#f92672">=&lt;/span> usernameBannedHandler&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>authenticated&lt;span style="color:#f92672">);&lt;/span>
+UserAuthenticationResult failureResult &lt;span style="color:#f92672">=&lt;/span> usernameBannedHandler&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">handleUserCredentials&lt;/span>&lt;span style="color:#f92672">(&lt;/span>failure&lt;span style="color:#f92672">);&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>bannedResult&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>cachedResult&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>authenticatedResult&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>failureResult&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output:&lt;/p>
+&lt;pre>&lt;code>Username: bannedUser
+Token: null
+IsAuthenticated: false
+Username: cachedUser
+Token: cachedUserToken
+IsAuthenticated: true
+Username: authenticatedUser
+Token: token
+IsAuthenticated: true
+Username: authenticateFailure
+Token: null
+IsAuthenticated: false
+&lt;/code>&lt;/pre>&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>&lt;a href="https://github.com/jakehell/Chain-of-Responsibility-Example">Here&lt;/a> is the source of this code on GitHub.&lt;/p></description></item><item><title>Don't Want to Create a Ton of Getters/Setters? Say Hello to the Abstract Document Pattern.</title><link>https://jacobhell.com/post/intro-abstract-document-pattern/</link><pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/intro-abstract-document-pattern/</guid><description>&lt;p>In this post, I talk about the Abstract Document pattern, which allows one to pseudo-dynamically create properties for a model. While keeping the type safety that statically typed languages like Java provide.&lt;/p>
+&lt;h3 id="type-safety">Type Safety&lt;/h3>
+&lt;p>Type safety is an important concept for programming languages. More dynamically typed languages like JavaScript will try to execute almost anything you try at it. Even if an operation between two values will not work on paper. For example:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">foo&lt;/span>(){
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;a&amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>;
+}
+&lt;span style="color:#a6e22e">foo&lt;/span>();
+&lt;span style="color:#75715e">// will return &amp;#34;a1&amp;#34;
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The value of type safety could make developers decide to use statically typed languages.&lt;/p>
+&lt;h3 id="downside-of-statically-typed-languages">Downside of Statically Typed Languages&lt;/h3>
+&lt;p>One disadvantage of using Statically-typed languages is the loss of flexibility when trying to add new values to a model or class.&lt;/p>
+&lt;p>For example, let&amp;rsquo;s say I have a class called &lt;code>Car&lt;/code> with two properties: &lt;code>Paint&lt;/code> and &lt;code>Trim&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Car&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String paint&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">private&lt;/span> String trim&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getPaint&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> paint&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setPaint&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String paint&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">paint&lt;/span> &lt;span style="color:#f92672">=&lt;/span> paint&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getTrim&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> trim&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">setTrim&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String trim&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">trim&lt;/span> &lt;span style="color:#f92672">=&lt;/span> trim&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Looks good right? This class would be fine if we just wanted to hold onto paint and trim. But what if we want to add the following fields:&lt;/p>
+&lt;ul>
+&lt;li>Window tint&lt;/li>
+&lt;li>Engine type&lt;/li>
+&lt;li>Wheel model&lt;/li>
+&lt;li>Radiator type&lt;/li>
+&lt;li>Has CD Player&lt;/li>
+&lt;li>Has Touch Screen&lt;/li>
+&lt;li>Plus potentially 1000+ more fields, depending on what the customer is wanting.&lt;/li>
+&lt;/ul>
+&lt;p>I don&amp;rsquo;t even want to think how big this class is going to get if we tried to implement all these fields!&lt;/p>
+&lt;h3 id="implementing-the-abstract-document">Implementing the Abstract Document&lt;/h3>
+&lt;p>To describe the Abstract Document, first we must start with an interface that I call &lt;code>Document&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">Document&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">put&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String key&lt;span style="color:#f92672">,&lt;/span> Object value&lt;span style="color:#f92672">);&lt;/span>
+Object &lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String key&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Pretty simple interface. Not really different from the default &lt;code>Map&lt;/code> abstract class in Java.&lt;/p>
+&lt;p>We will then create a class called &lt;code>Abstract Document&lt;/code> which implements &lt;code>Document&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">abstract&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">AbstractDocument&lt;/span> &lt;span style="color:#66d9ef">implements&lt;/span> Document &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">protected&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> Map&lt;span style="color:#f92672">&amp;lt;&lt;/span>String&lt;span style="color:#f92672">,&lt;/span> Object&lt;span style="color:#f92672">&amp;gt;&lt;/span> properties&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">protected&lt;/span> &lt;span style="color:#a6e22e">AbstractDocument&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Map&lt;span style="color:#f92672">&amp;lt;&lt;/span>String&lt;span style="color:#f92672">,&lt;/span> Object&lt;span style="color:#f92672">&amp;gt;&lt;/span> properties&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">this&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">properties&lt;/span> &lt;span style="color:#f92672">=&lt;/span> properties&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">put&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String key&lt;span style="color:#f92672">,&lt;/span> Object value&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+properties&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">put&lt;/span>&lt;span style="color:#f92672">(&lt;/span>key&lt;span style="color:#f92672">,&lt;/span> value&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> Object &lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String key&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> properties&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>key&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>AbstractDocument&lt;/code> is the class that all concrete documents will extend from. Again, this class is pretty simple. Things get exciting when we starting making more classes that extend &lt;code>Document&lt;/code>.&lt;/p>
+&lt;p>Before I go further, let me describe what we are trying to accomplish in this scenario. Going back to the &lt;code>Car&lt;/code> class I had before, let&amp;rsquo;s implement a workflow that will allow developers to create a Car that has a &lt;strong>Model&lt;/strong>, &lt;strong>Price&lt;/strong>, and list of &lt;strong>Parts&lt;/strong>. These parts can have their own model and price, and also a &lt;strong>Type&lt;/strong>.&lt;/p>
+&lt;h3 id="implementing-our-use-case">Implementing Our Use Case&lt;/h3>
+&lt;p>We first begin by adding interfaces that extend &lt;code>Document&lt;/code>. These interfaces should describe a noun that are a property of another noun. Let&amp;rsquo;s start with the model of the car. It is a noun which is a property of the car.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">HasModel&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> Document &lt;span style="color:#f92672">{&lt;/span>
+String &lt;span style="color:#a6e22e">getModel&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Another property we want to add is &lt;strong>Price&lt;/strong>.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">HasPrice&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> Document &lt;span style="color:#f92672">{&lt;/span>
+Number &lt;span style="color:#a6e22e">getPrice&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>We discussed adding &lt;strong>Parts&lt;/strong> as well. Before adding the interface, remember that each &lt;code>Part&lt;/code> will have it&amp;rsquo;s own &lt;strong>Model&lt;/strong> and &lt;strong>Price&lt;/strong> as well. It will also have a &lt;strong>Type&lt;/strong>, something that a &lt;strong>Car&lt;/strong> will not have. Let&amp;rsquo;s go ahead and create the &lt;code>HasType&lt;/code> interface.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">HasType&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> Document &lt;span style="color:#f92672">{&lt;/span>
+String &lt;span style="color:#a6e22e">getType&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>Part&lt;/code> is going to be our first concrete class. This is where the magic of the &lt;strong>Abstract Document&lt;/strong> is revealed:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Part&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> AbstractDocument &lt;span style="color:#66d9ef">implements&lt;/span> HasType&lt;span style="color:#f92672">,&lt;/span> HasModel&lt;span style="color:#f92672">,&lt;/span> HasPrice &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">protected&lt;/span> &lt;span style="color:#a6e22e">Part&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Map&lt;span style="color:#f92672">&amp;lt;&lt;/span>String&lt;span style="color:#f92672">,&lt;/span> Object&lt;span style="color:#f92672">&amp;gt;&lt;/span> properties&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">(&lt;/span>properties&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> Number &lt;span style="color:#a6e22e">getPrice&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#f92672">(&lt;/span>Number&lt;span style="color:#f92672">)&lt;/span> properties&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">PRICE&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getModel&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">)&lt;/span> properties&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">MODEL&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getType&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">)&lt;/span> properties&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">TYPE&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>When creating the concrete classes, remember that we must extend &lt;code>AbstractDocument&lt;/code>. Every &lt;code>Document&lt;/code> that we add as well we must implement. You can implement as many Documents you want.&lt;/p>
+&lt;p>Lastly, let&amp;rsquo;s create the &lt;code>Car&lt;/code> concrete class.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Car&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> AbstractDocument &lt;span style="color:#66d9ef">implements&lt;/span> HasModel&lt;span style="color:#f92672">,&lt;/span> HasPrice&lt;span style="color:#f92672">,&lt;/span> HasParts &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">protected&lt;/span> &lt;span style="color:#a6e22e">Car&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Map&lt;span style="color:#f92672">&amp;lt;&lt;/span>String&lt;span style="color:#f92672">,&lt;/span> Object&lt;span style="color:#f92672">&amp;gt;&lt;/span> properties&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">super&lt;/span>&lt;span style="color:#f92672">(&lt;/span>properties&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> List&lt;span style="color:#f92672">&amp;lt;&lt;/span>Part&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#a6e22e">getParts&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#a6e22e">@SuppressWarnings&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;unchecked&amp;#34;&lt;/span>&lt;span style="color:#f92672">)&lt;/span>
+List&lt;span style="color:#f92672">&amp;lt;&lt;/span>Map&lt;span style="color:#f92672">&amp;lt;&lt;/span>String&lt;span style="color:#f92672">,&lt;/span> Object&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span> parts &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>List&lt;span style="color:#f92672">&amp;lt;&lt;/span>Map&lt;span style="color:#f92672">&amp;lt;&lt;/span>String&lt;span style="color:#f92672">,&lt;/span> Object&lt;span style="color:#f92672">&amp;gt;&amp;gt;)&lt;/span> properties&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">PARTS&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> parts&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">stream&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">map&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Part&lt;span style="color:#f92672">::&lt;/span>&lt;span style="color:#66d9ef">new&lt;/span>&lt;span style="color:#f92672">).&lt;/span>&lt;span style="color:#a6e22e">collect&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Collectors&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toList&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> Number &lt;span style="color:#a6e22e">getPrice&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#f92672">(&lt;/span>Number&lt;span style="color:#f92672">)&lt;/span> properties&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">PRICE&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> String &lt;span style="color:#a6e22e">getModel&lt;/span>&lt;span style="color:#f92672">()&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">)&lt;/span> properties&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">get&lt;/span>&lt;span style="color:#f92672">(&lt;/span>Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">MODEL&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="bringing-it-all-together">Bringing it all Together&lt;/h3>
+&lt;p>Now that we have got the &lt;strong>Abstract Document&lt;/strong> implemented with concrete classes, let&amp;rsquo;s get a simple client working.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Main&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>&lt;span style="color:#f92672">(&lt;/span>String&lt;span style="color:#f92672">[]&lt;/span> args&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+var engine &lt;span style="color:#f92672">=&lt;/span> Map&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">of&lt;/span>&lt;span style="color:#f92672">(&lt;/span>
+Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">MODEL&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Model 1&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
+Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">PRICE&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> 200&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">00&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
+Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">TYPE&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Engine&amp;#34;&lt;/span>
+&lt;span style="color:#f92672">);&lt;/span>
+var muffler &lt;span style="color:#f92672">=&lt;/span> Map&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">of&lt;/span>&lt;span style="color:#f92672">(&lt;/span>
+Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">TYPE&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Muffler&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
+Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">PRICE&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> 100&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">00&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
+Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">MODEL&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Model 2&amp;#34;&lt;/span>
+&lt;span style="color:#f92672">);&lt;/span>
+var carProperties &lt;span style="color:#f92672">=&lt;/span> Map&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">of&lt;/span>&lt;span style="color:#f92672">(&lt;/span>
+Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">MODEL&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Fast car&amp;#34;&lt;/span>&lt;span style="color:#f92672">,&lt;/span>
+Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">PRICE&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> 50000&lt;span style="color:#f92672">,&lt;/span>
+Property&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">PARTS&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">toString&lt;/span>&lt;span style="color:#f92672">(),&lt;/span> List&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">of&lt;/span>&lt;span style="color:#f92672">(&lt;/span>engine&lt;span style="color:#f92672">,&lt;/span> muffler&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">);&lt;/span>
+var car &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> Car&lt;span style="color:#f92672">(&lt;/span>carProperties&lt;span style="color:#f92672">);&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>car&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getModel&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>car&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getPrice&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+car&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getParts&lt;/span>&lt;span style="color:#f92672">().&lt;/span>&lt;span style="color:#a6e22e">forEach&lt;/span>&lt;span style="color:#f92672">(&lt;/span>part &lt;span style="color:#f92672">-&amp;gt;&lt;/span> System&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">out&lt;/span>&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">println&lt;/span>&lt;span style="color:#f92672">(&lt;/span>part&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getModel&lt;/span>&lt;span style="color:#f92672">()));&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output:&lt;/p>
+&lt;pre>&lt;code>Fast car
+50000
+Model 1
+Model 2
+&lt;/code>&lt;/pre>&lt;h3 id="conclusion">Conclusion&lt;/h3>
+&lt;p>Thanks for reading!&lt;/p>
+&lt;p>I have created a GitHub repo with the source for this post. Please &lt;a href="https://github.com/jakehell/AbstractDocumentPatternExample">go here&lt;/a> to view it.&lt;/p></description></item><item><title>About</title><link>https://jacobhell.com/about/</link><pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/about/</guid><description>&lt;p>Hello!&lt;/p>
+&lt;p>My name is Jacob. I&amp;rsquo;m a software engineer who currently lives in Huntsville, AL, also known as the Rocket City.&lt;/p>
+&lt;p>In this blog, I post about software architecture, design, unit testing, and sometimes other tech topics.&lt;/p>
+&lt;p>Interested in knowing more about me? Please reach out by &lt;a href="mailto:jakehell95@gmail.com">email&lt;/a>, or by checking out some of these sites that I&amp;rsquo;m registered for:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.linkedin.com/in/jacob-hell">LinkedIn&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/jacobhell">GitHub&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Have a lot of if/else Statements Doing Similar Things? Use an Abstract Factory!</title><link>https://jacobhell.com/post/using-abstract-factory-pattern/</link><pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/using-abstract-factory-pattern/</guid><description>&lt;p>When working on a legacy system, one of the more common problems I see is similar actions happening within if/else or control statements.&lt;/p>
+&lt;p>Take this code snippet for example:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> LedgerEntry &lt;span style="color:#a6e22e">getLedgerEntry&lt;/span>&lt;span style="color:#f92672">(&lt;/span>TransactionDetails details&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+LedgerEntry entry &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+String transactionType &lt;span style="color:#f92672">=&lt;/span> details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getTransactionType&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;check&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+entry &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> CheckEntry&lt;span style="color:#f92672">();&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCheckType&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;check&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCheckPurchaser&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getPurchaser&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCheckDate&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getDate&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setRoutingNumber&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getRoutingNumber&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setAccountNumber&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getAccountNumber&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span> &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;creditcard&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+entry &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> CreditCardLedgerEntry&lt;span style="color:#f92672">();&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setType&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;creditcard&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCreditCardPurchaser&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getPurchaser&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCreditCardDate&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getDate&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCreditCardNumber&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getCreditCardNumber&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span> &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cash&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+entry &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> CashEntry&lt;span style="color:#f92672">();&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setType&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cash&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCashPurchaser&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getPurchaser&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCashDate&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getDate&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span> &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;crypto&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+entry &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> CryptoEntry&lt;span style="color:#f92672">();&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setType&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;crypto&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCryptoPurchaser&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getPurchaser&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCryptoDate&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getDate&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCyrptoPublicKey&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getPublicKey&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> entry&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Let&amp;rsquo;s say that this snippet is from a larger accounting program that will save financial records to a database.&lt;/p>
+&lt;p>This method is doing the following:&lt;/p>
+&lt;ol>
+&lt;li>Determining what type of transaction occurred based on the transaction type&lt;/li>
+&lt;li>Creating a concrete instance of the &lt;code>LedgerEntry&lt;/code> abstract class&lt;/li>
+&lt;li>Returning this entry&lt;/li>
+&lt;/ol>
+&lt;p>This method probably works fine, but what if we needed to do something for both cash and cryptocurrency transactions:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> LedgerEntry &lt;span style="color:#a6e22e">getLedgerEntry&lt;/span>&lt;span style="color:#f92672">(&lt;/span>TransactionDetails details&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#75715e">// previous code
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cash&amp;#34;&lt;/span>&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">||&lt;/span> transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;crypto&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setAlertFBIAndPresidentOfUSA&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> entry&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>And what if further we needed to do something special to other transaction types? This could get complicated fast.&lt;/p>
+&lt;p>My go to solution for problems such as this to use the &lt;strong>Abstract Factory Pattern&lt;/strong>. This is one of the patterns found in the famous book: &lt;a href="https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8">Design Patterns: Elements of Reusable Object-Oriented Software&lt;/a>.&lt;/p>
+&lt;p>The Abstract Factory Pattern relies on the client creating a &lt;strong>Factory&lt;/strong> and then calling the abstract method &lt;strong>create&lt;/strong>.&lt;/p>
+&lt;p>The nice thing about this is the client doesn&amp;rsquo;t have to know about the inner workings of each create method.&lt;/p>
+&lt;p>Let&amp;rsquo;s see what this method looks like after using the Abstract Factory Pattern:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> LedgerEntry &lt;span style="color:#a6e22e">getLedgerEntry&lt;/span>&lt;span style="color:#f92672">(&lt;/span>TransactionDetails details&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+AbstractLedgerFactory ledgerFactory &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">null&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+String transactionType &lt;span style="color:#f92672">=&lt;/span> details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getTransactionType&lt;/span>&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;check&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+ledgerFactory &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> CheckLedgerFactory&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span> &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;creditcard&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+ledgerFactory &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> CreditCardLedgerFactory&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span> &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;cash&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+ledgerFactory &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> CashLedgerFactory&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span> &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span>&lt;span style="color:#f92672">(&lt;/span>transactionType&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">equals&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;crypto&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+ledgerFactory &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> CryptoLedgerFactory&lt;span style="color:#f92672">();&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> ledgerFactory&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">create&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Much easier to read! And if more logic needs to happen for transaction types, it can be done in the concrete factory method.&lt;/p>
+&lt;p>Here is the &lt;code>AbstractLedgerFactory&lt;/code> and &lt;code>CryptoLedgerFactory&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">abstract&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">AbstractLedgerFactory&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">abstract&lt;/span> LedgerEntry &lt;span style="color:#a6e22e">create&lt;/span>&lt;span style="color:#f92672">(&lt;/span>TransactionDetails details&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">CryptoLedgerFactory&lt;/span> &lt;span style="color:#66d9ef">extends&lt;/span> AbstractLedgerFactory
+&lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#a6e22e">@Override&lt;/span>
+&lt;span style="color:#66d9ef">public&lt;/span> LedgerEntry &lt;span style="color:#a6e22e">create&lt;/span>&lt;span style="color:#f92672">(&lt;/span>TransactionDetails details&lt;span style="color:#f92672">)&lt;/span>
+&lt;span style="color:#f92672">{&lt;/span>
+LedgerEntry entry &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">new&lt;/span> CryptoEntry&lt;span style="color:#f92672">();&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setType&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;crypto&amp;#34;&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCryptoPurchaser&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getPurchaser&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCryptoDate&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getDate&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setCyrptoPublicKey&lt;/span>&lt;span style="color:#f92672">(&lt;/span>details&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">getPublicKey&lt;/span>&lt;span style="color:#f92672">());&lt;/span>
+entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">setAlertFBIAndPresidentOfUSA&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">true&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#66d9ef">return&lt;/span> entry&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Programming on the Cheap. How to Program on a $20 Device.</title><link>https://jacobhell.com/post/programming-on-the-cheap/</link><pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/programming-on-the-cheap/</guid><description>&lt;p>Like most people, I like to do things as cheaply as possible.&lt;/p>
+&lt;p>This thought extends to programming for me. Lucky for us who are software developers, a lot of the tools we get to use are free.&lt;/p>
+&lt;p>This includes programming languages with their compilers, IDEs and editors, and even operating systems. We can thank the pioneers of the
+free software movement and GNU project for this.&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../535px-Heckert_GNU_white.svg.png" alt="GNU logo" width="300" height="300">&lt;/div>
+&lt;p>However, one thing we can&amp;rsquo;t get for free is the computer that we write, compile, and run our programs on. Not only are computers not
+free, they can be very expensive! In fact, on &lt;a href="https://www.techradar.com/news/best-laptop-for-programming#8-asus-chromebook-flip">TechRadar&lt;/a>, the &amp;ldquo;affordable&amp;rdquo; option is the Asus Chromebook Flip. This machine retails for &lt;strong>$579&lt;/strong>! If I was non developer looking to get into programming, I would be out almost &lt;strong>$600&lt;/strong> before a single stroke of the keyboard.&lt;/p>
+&lt;p>Knowing this, I decided to pop into my local thrift store and see if there was a remedy for this insanity. That&amp;rsquo;s when I found this beauty:&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../laptop1.jpg" alt="Laptop found at thrift store" width="300" height="300">&lt;/div>
+&lt;p>A gently used Dell Inspiron E1405 was in the technology section screaming my name. I looked at the price tag, only &lt;strong>$20&lt;/strong>! What a steal! I quickly took out an Andrew Jackson and made off like a bandit.&lt;/p>
+&lt;p>I got home, turned it on, and realized it had Windows XP on it:&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../laptop2.jpg" alt="Laptop with windows xp" width="300" height="300">&lt;/div>
+&lt;p>I have no desire to program on a computer with an operating system that hasn&amp;rsquo;t been updated in over a decade. That&amp;rsquo;s where Linux comes in.&lt;/p>
+&lt;p>Now this was an old laptop, so I wanted to use a lightweight operating system on it. I ultimately chose Lubuntu, because it has LxQt, one of the lightest desktop graphical systems around. And I generally spend my time in the terminal emulator and vim, so I didnt&amp;rsquo;t need too many out of the box features.&lt;/p>
+&lt;p>Lubuntu has a pretty straightforward &lt;a href="https://help.ubuntu.com/community/Lubuntu/InstallingLubuntu">installation process&lt;/a>. I had no problems going through the steps in the guide. I did mistakenly try using the 64 bit version instead of the 32 bit version, which is what the cpu required.&lt;/p>
+&lt;p>I could have avoided this though, if I looked it up beforehand: &lt;a href="https://www.computerhope.com/issues/ch001121.htm">How to check&lt;/a>&lt;/p>
+&lt;p>With the stress and anxiety of $600 laptops behind me, I was able to fire up my new to me Lubuntu powered laptop, and write this blog post with great amounts of joy and happiness.&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../hacking_on_lubuntu.png" alt="Laptop using Lubuntu" width="600" height="450">&lt;/div></description></item><item><title>Search</title><link>https://jacobhell.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jacobhell.com/search/</guid><description>&lt;div class="searchBoxContainer">
+&lt;input type="text" id="searchBox" class="searchBox" placeholder="Search..." />
+&lt;/div>
+&lt;div id="searchResults" class="searchResults">&lt;/div></description></item></channel></rss>

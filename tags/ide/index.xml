@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ide on Jacob Hell's Blog</title><link>https://jacobhell.com/tags/ide/</link><description>Recent content in ide on Jacob Hell's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jacobhell.com/tags/ide/index.xml" rel="self" type="application/rss+xml"/><item><title>Eclipse versus IntelliJ</title><link>https://jacobhell.com/post/eclipse-vs-intellij/</link><pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/eclipse-vs-intellij/</guid><description>&lt;p>Let&amp;rsquo;s compare these two IDEs.&lt;/p>
+&lt;h1 id="general-info">General Info&lt;/h1>
+&lt;h3 id="eclipse">Eclipse&lt;/h3>
+&lt;p>Eclipse was created by IBM and released in 2001. Eclipse natively supports Java, but has plugins for a ton of other languages. Eclipse is free and has no paid version.&lt;/p>
+&lt;h3 id="intellij">IntelliJ&lt;/h3>
+&lt;p>IntelliJ was released in 2001 by JetBrains. IntelliJ natively supports Java, Groovy, and Kotlin, but has plugins for a ton of other languages. In the paid version of IntelliJ, JavaScript, SQL, Ruby, and a few other languages are supported.&lt;/p>
+&lt;h1 id="debugging">Debugging&lt;/h1>
+&lt;h3 id="eclipse-1">Eclipse&lt;/h3>
+&lt;p>In Eclipse, to obtain the values of variables in scope requires you to either:&lt;/p>
+&lt;ul>
+&lt;li>Mouse over the variables and see the value&lt;/li>
+&lt;li>Add the variable name to the &amp;ldquo;expressions&amp;rdquo; window.&lt;/li>
+&lt;/ul>
+&lt;p>That&amp;rsquo;s too much manual work for this guy.&lt;/p>
+&lt;h3 id="intellij-1">IntelliJ&lt;/h3>
+&lt;p>In IntelliJ, all variables in Scope are already present in the &amp;ldquo;Variables&amp;rdquo; window. No manual work is required by me!&lt;/p>
+&lt;h1 id="refactoring">Refactoring&lt;/h1>
+&lt;h3 id="eclipse-2">Eclipse&lt;/h3>
+&lt;p>Eclipse has refactoring for renaming files and packages (and updating the name of the references in other files), and extracting code into super classes. It doesn&amp;rsquo;t offer much for refactoring the lines of code itself though.&lt;/p>
+&lt;p>It can also suggest things like unused variables, infinite loops, and unreachable code.&lt;/p>
+&lt;h3 id="intellij-2">IntelliJ&lt;/h3>
+&lt;p>IntelliJ offers much more options for creating super classes, even going into the member and inline code level.&lt;/p>
+&lt;p>IntelliJ offers suggestions for almost any line of code.&lt;/p>
+&lt;h1 id="windows">Windows&lt;/h1>
+&lt;h3 id="eclipse-3">Eclipse&lt;/h3>
+&lt;p>The biggest problem I have with Eclipse is something I call &amp;ldquo;Window Fatigue&amp;rdquo;. There are SO many windows in Eclipse, and they always end up in strange places. The concept of &amp;ldquo;Perspectives&amp;rdquo; makes this even more confusing!&lt;/p>
+&lt;p>For example, I will have the console window open while coding. Then when I run the program and start debugging, Eclipse will switch to the &amp;ldquo;debug&amp;rdquo; perspective. This opens and changes the position and size of all windows that are defined by the debug perspective. Once I&amp;rsquo;m done debugging, they all go back to the normal perspective.&lt;/p>
+&lt;p>It might just be me, but I continuously find myself moving stuff around when using Eclipse. And it really wears on me.&lt;/p>
+&lt;h3 id="intellij-3">IntelliJ&lt;/h3>
+&lt;p>In IntelliJ it&amp;rsquo;s harder to change the window positions. I haven&amp;rsquo;t found myself trying to move stuff around when coding. This is a good thing for me. I can&amp;rsquo;t be trusted with my constant window moving.&lt;/p>
+&lt;h1 id="usability">Usability&lt;/h1>
+&lt;h3 id="eclipse-4">Eclipse&lt;/h3>
+&lt;p>For whatever reason, loading and closing a project in Eclipse can cause problems. For example, sometimes after reopening a project, files will no longer be found. Or there will be random errors when trying to start a program, only fixed by removing the project and re importing it.&lt;/p>
+&lt;p>I&amp;rsquo;m not sure why this is. I have spent many hours trying to figure out issues with code, only for it to be an Eclipse problem.&lt;/p>
+&lt;h3 id="intellij-4">IntelliJ&lt;/h3>
+&lt;p>Never had a random problem like this in IntelliJ. However, due to Eclipse being the most used IDE for some time, figuring out a problem is relatively easy. Since there is a good chance that someone else has had the same problem and posted their issue on the internet.&lt;/p>
+&lt;h1 id="conclusion">Conclusion&lt;/h1>
+&lt;p>I didn&amp;rsquo;t intend for this post to be dropping bombs on Eclipse. IntelliJ is just a lot better in my opinion. The only major drawback is that if you are not doing desktop Java development, you need to buy the paid version to assist with your coding.&lt;/p></description></item></channel></rss>

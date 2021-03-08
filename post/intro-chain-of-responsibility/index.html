@@ -1,0 +1,224 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><title>The Chain of Responsibility Pattern Makes Hard Validation Easy</title><script async src="https://www.googletagmanager.com/gtag/js?id=UA-161403382-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-161403382-1')</script><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=alternate type=application/rss+xml href=https://jacobhell.com/index.xml title="Jacob Hell's Blog"><link id=dark-mode-theme rel=stylesheet href=https://jacobhell.com/css/dark.css><link rel=stylesheet href=https://jacobhell.com/fontawesome/css/all.min.css><script src=https://jacobhell.com/js/bundle.js></script><script src=https://jacobhell.com/js/instantpage.js type=module defer></script><meta name=generator content="Hugo 0.81.0"></head><body><header><nav class=navbar><div class=nav><ul class=nav-links><li><a href=/about/ name=About><i class="fas fa-user fa-lg"></i></a></li><li><a href=/tags name=Tags><i class="fas fa-tag fa-lg"></i></a></li><li><a href=/search name=Search><i class="fas fa-search fa-lg"></i></a></li><li><a href=/index.xml name=RSS><i class="fas fa-rss"></i></a></li></ul></div></nav><div class=intro-header><div class=container><div class=post-heading><h1>The Chain of Responsibility Pattern Makes Hard Validation Easy</h1><span class=meta-post><i class="fa fa-calendar-alt"></i>&nbsp;Mar 25, 2020</span></div></div></div></header><div class=container role=main><article class=article class=blog-post><p>I like my validation workflow the same way I like my IKEA tables. Easy to setup and with a cool name. Though the Chain of Responsibility is no <a href=https://www.ikea.com/us/en/p/godfjord-bed-frame-gray-s99256172/>Godfjord</a>, it is pretty easy to use.</p><h2 id=intro>Intro</h2><p>Hello professional computer touchers.</p><p>A great <a href=https://refactoring.guru/design-patterns/chain-of-responsibility>intro</a> has already been written for Chain of Responsibility. I highly recommend Refactoring.Guru for their other articles too.</p><h2 id=my-two-problems>My Two Problems</h2><p>I&rsquo;ve got a backend written in Java that takes in a username and password. This backend authenticates users and returns a token.</p><p>I was happy to get it done and it was easy to implement. Unfortunately my happiness was short-lived. Because my site is now under <strong>attack</strong> by hackers.</p><p>If that wasn&rsquo;t bad enough, I forgot to pay the bill for the VPS hosting my database. Now they&rsquo;ve downgraded my service.</p><h2 id=the-solutions>The Solutions</h2><p>Here&rsquo;s what I&rsquo;ve got to do:</p><ol><li>Prevent the usernames of known hackers from logging in.</li><li>Cache authenticated usernames for less DB reads.</li></ol><h2 id=the-pojos>The POJOs</h2><p>The POJO that stores the authentication request:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>UserAuthenticationRequest</span> <span style=color:#f92672>{</span>
+
+	<span style=color:#66d9ef>private</span> String username<span style=color:#f92672>;</span>
+	<span style=color:#66d9ef>private</span> String password<span style=color:#f92672>;</span>
+	
+	<span style=color:#66d9ef>public</span> <span style=color:#a6e22e>UserAuthenticationRequest</span><span style=color:#f92672>(</span>String username<span style=color:#f92672>,</span> String password<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>username</span> <span style=color:#f92672>=</span> username<span style=color:#f92672>;</span>
+		<span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>password</span> <span style=color:#f92672>=</span> password<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+
+	<span style=color:#66d9ef>public</span> String <span style=color:#a6e22e>getUsername</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>return</span> username<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+
+	<span style=color:#66d9ef>public</span> String <span style=color:#a6e22e>getPassword</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>return</span> password<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+</code></pre></div><p>The POJO that stores the authentication response:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>UserAuthenticationResult</span> <span style=color:#f92672>{</span>
+	<span style=color:#66d9ef>private</span> String token<span style=color:#f92672>;</span>
+	<span style=color:#66d9ef>private</span> String username<span style=color:#f92672>;</span>
+	<span style=color:#66d9ef>private</span> <span style=color:#66d9ef>boolean</span> authenticated<span style=color:#f92672>;</span>
+	
+	<span style=color:#66d9ef>public</span> String <span style=color:#a6e22e>getUsername</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>return</span> username<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+	<span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>setUsername</span><span style=color:#f92672>(</span>String username<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>username</span> <span style=color:#f92672>=</span> username<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+	<span style=color:#66d9ef>public</span> String <span style=color:#a6e22e>getToken</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>return</span> token<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+	<span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>setToken</span><span style=color:#f92672>(</span>String token<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>token</span> <span style=color:#f92672>=</span> token<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+	<span style=color:#66d9ef>public</span> <span style=color:#66d9ef>boolean</span> <span style=color:#a6e22e>isAuthenticated</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>return</span> authenticated<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+	<span style=color:#66d9ef>public</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>setAuthenticated</span><span style=color:#f92672>(</span><span style=color:#66d9ef>boolean</span> authenticated<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>authenticated</span> <span style=color:#f92672>=</span> authenticated<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#a6e22e>@Override</span>
+	<span style=color:#66d9ef>public</span> String <span style=color:#a6e22e>toString</span><span style=color:#f92672>()</span>
+	<span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;Username: &#34;</span> <span style=color:#f92672>+</span> username 
+				<span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;\nToken: &#34;</span> <span style=color:#f92672>+</span> token
+				<span style=color:#f92672>+</span> <span style=color:#e6db74>&#34;\nIsAuthenticated: &#34;</span> <span style=color:#f92672>+</span> authenticated<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+
+</code></pre></div><h2 id=chain-of-responsibility-implementation>Chain of Responsibility Implementation</h2><p>The Chain of Responsibility pattern first needs an abstract <code>Handler</code> class. My other Handlers will extend from this class.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>abstract</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>UserAuthenticationHandler</span> <span style=color:#f92672>{</span>
+	<span style=color:#66d9ef>private</span> UserAuthenticationHandler next<span style=color:#f92672>;</span>
+	
+	<span style=color:#66d9ef>public</span> <span style=color:#a6e22e>UserAuthenticationHandler</span><span style=color:#f92672>(</span>UserAuthenticationHandler next<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>this</span><span style=color:#f92672>.</span><span style=color:#a6e22e>next</span> <span style=color:#f92672>=</span> next<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#66d9ef>public</span> UserAuthenticationResult <span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>UserAuthenticationRequest request<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>return</span> next<span style=color:#f92672>.</span><span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>request<span style=color:#f92672>);</span>
+	<span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+</code></pre></div><p>Should do the trick.</p><p>Let&rsquo;s write some code to deal with those pesky hackers. The handler should return a UserAuthenticationResult with authenticate set to <code>false</code> if they are up to no good.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>UsernameBannedHandler</span> <span style=color:#66d9ef>extends</span> UserAuthenticationHandler <span style=color:#f92672>{</span>
+	<span style=color:#66d9ef>private</span> List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> bannedUsernames<span style=color:#f92672>;</span>
+	
+	<span style=color:#66d9ef>public</span> <span style=color:#a6e22e>UsernameBannedHandler</span><span style=color:#f92672>(</span>UserAuthenticationHandler next<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>super</span><span style=color:#f92672>(</span>next<span style=color:#f92672>);</span>
+		
+		bannedUsernames <span style=color:#f92672>=</span> List<span style=color:#f92672>.</span><span style=color:#a6e22e>of</span><span style=color:#f92672>(</span><span style=color:#e6db74>&#34;jakehell&#34;</span><span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;bannedUser&#34;</span><span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;jakehell2&#34;</span><span style=color:#f92672>);</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#a6e22e>@Override</span>
+	<span style=color:#66d9ef>public</span> UserAuthenticationResult <span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>UserAuthenticationRequest request<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>if</span><span style=color:#f92672>(</span>isUsernameBanned<span style=color:#f92672>(</span>request<span style=color:#f92672>))</span>
+		<span style=color:#f92672>{</span>
+			<span style=color:#66d9ef>return</span> getAuthenticationFailureResult<span style=color:#f92672>(</span>request<span style=color:#f92672>);</span>
+		<span style=color:#f92672>}</span>
+		
+		<span style=color:#66d9ef>return</span> <span style=color:#66d9ef>super</span><span style=color:#f92672>.</span><span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>request<span style=color:#f92672>);</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#66d9ef>private</span> <span style=color:#66d9ef>boolean</span> <span style=color:#a6e22e>isUsernameBanned</span><span style=color:#f92672>(</span>UserAuthenticationRequest request<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>return</span> bannedUsernames<span style=color:#f92672>.</span><span style=color:#a6e22e>contains</span><span style=color:#f92672>(</span>request<span style=color:#f92672>.</span><span style=color:#a6e22e>getUsername</span><span style=color:#f92672>());</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#66d9ef>private</span> UserAuthenticationResult <span style=color:#a6e22e>getAuthenticationFailureResult</span><span style=color:#f92672>(</span>UserAuthenticationRequest request<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		UserAuthenticationResult result <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> UserAuthenticationResult<span style=color:#f92672>();</span>
+		result<span style=color:#f92672>.</span><span style=color:#a6e22e>setUsername</span><span style=color:#f92672>(</span>request<span style=color:#f92672>.</span><span style=color:#a6e22e>getUsername</span><span style=color:#f92672>());</span>
+		result<span style=color:#f92672>.</span><span style=color:#a6e22e>setAuthenticated</span><span style=color:#f92672>(</span><span style=color:#66d9ef>false</span><span style=color:#f92672>);</span>
+		
+		<span style=color:#66d9ef>return</span> result<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+</code></pre></div><p>That takes care of my first problem.</p><p>Now to check if the username is cached. This handler should return the cached username and token.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>UserCachedHandler</span> <span style=color:#66d9ef>extends</span> UserAuthenticationHandler <span style=color:#f92672>{</span>
+	<span style=color:#66d9ef>private</span> Map<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>,</span> String<span style=color:#f92672>&gt;</span> usernameToken<span style=color:#f92672>;</span>
+	
+	<span style=color:#66d9ef>public</span> <span style=color:#a6e22e>UserCachedHandler</span><span style=color:#f92672>(</span>UserAuthenticationHandler next<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>super</span><span style=color:#f92672>(</span>next<span style=color:#f92672>);</span>
+		
+		usernameToken <span style=color:#f92672>=</span> Map<span style=color:#f92672>.</span><span style=color:#a6e22e>of</span><span style=color:#f92672>(</span><span style=color:#e6db74>&#34;cachedUser&#34;</span><span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;cachedUserToken&#34;</span><span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;jakehell4&#34;</span><span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;token5&#34;</span><span style=color:#f92672>);</span>
+	<span style=color:#f92672>}</span>
+
+	<span style=color:#a6e22e>@Override</span>
+	<span style=color:#66d9ef>public</span> UserAuthenticationResult <span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>UserAuthenticationRequest request<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		String username <span style=color:#f92672>=</span> request<span style=color:#f92672>.</span><span style=color:#a6e22e>getUsername</span><span style=color:#f92672>();</span>
+		<span style=color:#66d9ef>if</span><span style=color:#f92672>(</span>usernameToken<span style=color:#f92672>.</span><span style=color:#a6e22e>containsKey</span><span style=color:#f92672>(</span>username<span style=color:#f92672>))</span>
+		<span style=color:#f92672>{</span>
+			<span style=color:#66d9ef>return</span> getSuccessfulUserAuthenticationResult<span style=color:#f92672>(</span>username<span style=color:#f92672>);</span>
+		<span style=color:#f92672>}</span>
+		
+		<span style=color:#66d9ef>return</span> <span style=color:#66d9ef>super</span><span style=color:#f92672>.</span><span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>request<span style=color:#f92672>);</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#66d9ef>public</span> UserAuthenticationResult <span style=color:#a6e22e>getSuccessfulUserAuthenticationResult</span><span style=color:#f92672>(</span>String username<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		UserAuthenticationResult result <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> UserAuthenticationResult<span style=color:#f92672>();</span>
+		result<span style=color:#f92672>.</span><span style=color:#a6e22e>setUsername</span><span style=color:#f92672>(</span>username<span style=color:#f92672>);</span>
+		result<span style=color:#f92672>.</span><span style=color:#a6e22e>setToken</span><span style=color:#f92672>(</span>usernameToken<span style=color:#f92672>.</span><span style=color:#a6e22e>get</span><span style=color:#f92672>(</span>username<span style=color:#f92672>));</span>
+		result<span style=color:#f92672>.</span><span style=color:#a6e22e>setAuthenticated</span><span style=color:#f92672>(</span><span style=color:#66d9ef>true</span><span style=color:#f92672>);</span>
+		
+		<span style=color:#66d9ef>return</span> result<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+</code></pre></div><p>Lastly, I need to actually try to authenticate the user.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>AuthenticateUserHandler</span> <span style=color:#66d9ef>extends</span> UserAuthenticationHandler <span style=color:#f92672>{</span>
+
+	<span style=color:#66d9ef>public</span> <span style=color:#a6e22e>AuthenticateUserHandler</span><span style=color:#f92672>(</span>UserAuthenticationHandler next<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>super</span><span style=color:#f92672>(</span>next<span style=color:#f92672>);</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#a6e22e>@Override</span>
+	<span style=color:#66d9ef>public</span> UserAuthenticationResult <span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>UserAuthenticationRequest request<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>if</span><span style=color:#f92672>(</span>authenticateUser<span style=color:#f92672>(</span>request<span style=color:#f92672>))</span>
+		<span style=color:#f92672>{</span>
+			<span style=color:#66d9ef>return</span> createSuccessfulResult<span style=color:#f92672>(</span>request<span style=color:#f92672>);</span>
+		<span style=color:#f92672>}</span>
+		
+		<span style=color:#66d9ef>return</span> <span style=color:#66d9ef>super</span><span style=color:#f92672>.</span><span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>request<span style=color:#f92672>);</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#66d9ef>private</span> <span style=color:#66d9ef>boolean</span> <span style=color:#a6e22e>authenticateUser</span><span style=color:#f92672>(</span>UserAuthenticationRequest request<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>if</span><span style=color:#f92672>(</span>request<span style=color:#f92672>.</span><span style=color:#a6e22e>getUsername</span><span style=color:#f92672>().</span><span style=color:#a6e22e>equals</span><span style=color:#f92672>(</span><span style=color:#e6db74>&#34;authenticatedUser&#34;</span><span style=color:#f92672>)</span> <span style=color:#f92672>&amp;&amp;</span> request<span style=color:#f92672>.</span><span style=color:#a6e22e>getPassword</span><span style=color:#f92672>().</span><span style=color:#a6e22e>equals</span><span style=color:#f92672>(</span><span style=color:#e6db74>&#34;password&#34;</span><span style=color:#f92672>))</span>
+		<span style=color:#f92672>{</span>
+			<span style=color:#66d9ef>return</span> <span style=color:#66d9ef>true</span><span style=color:#f92672>;</span>
+		<span style=color:#f92672>}</span>
+
+		<span style=color:#66d9ef>return</span> <span style=color:#66d9ef>false</span><span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#66d9ef>private</span> UserAuthenticationResult <span style=color:#a6e22e>createSuccessfulResult</span><span style=color:#f92672>(</span>UserAuthenticationRequest request<span style=color:#f92672>)</span>
+	<span style=color:#f92672>{</span>
+		UserAuthenticationResult result <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> UserAuthenticationResult<span style=color:#f92672>();</span>
+		result<span style=color:#f92672>.</span><span style=color:#a6e22e>setAuthenticated</span><span style=color:#f92672>(</span><span style=color:#66d9ef>true</span><span style=color:#f92672>);</span>
+		result<span style=color:#f92672>.</span><span style=color:#a6e22e>setUsername</span><span style=color:#f92672>(</span>request<span style=color:#f92672>.</span><span style=color:#a6e22e>getUsername</span><span style=color:#f92672>());</span>
+		result<span style=color:#f92672>.</span><span style=color:#a6e22e>setToken</span><span style=color:#f92672>(</span>generateToken<span style=color:#f92672>());</span>
+		
+		<span style=color:#66d9ef>return</span> result<span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+	
+	<span style=color:#66d9ef>private</span> String <span style=color:#a6e22e>generateToken</span><span style=color:#f92672>()</span>
+	<span style=color:#f92672>{</span>
+		<span style=color:#66d9ef>return</span> <span style=color:#e6db74>&#34;token&#34;</span><span style=color:#f92672>;</span>
+	<span style=color:#f92672>}</span>
+<span style=color:#f92672>}</span>
+</code></pre></div><p>For some reason, only <code>authenticatedUser</code> can login. Oh well, different problem for a different day.</p><h2 id=creating-the-chain>Creating the Chain</h2><p>Here is the chain:</p><p><code>UsernameBannedHandler -> UserCachedHandler -> UserAuthenticationHandler</code></p><p>I also put <code>ForceAuthenticationFailureHandler</code> after <code>UserAuthenticationHandler</code>. Since authentication failed if it got to that handler.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>main</span><span style=color:#f92672>(</span>String<span style=color:#f92672>[]</span> args<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+		ForceAuthenticationFailureHandler forceAuthenticationFailureHandler <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> ForceAuthenticationFailureHandler<span style=color:#f92672>(</span><span style=color:#66d9ef>null</span><span style=color:#f92672>);</span>
+		AuthenticateUserHandler authenticateUserHandler <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> AuthenticateUserHandler<span style=color:#f92672>(</span>forceAuthenticationFailureHandler<span style=color:#f92672>);</span>
+		UserCachedHandler userCachedHandler <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> UserCachedHandler<span style=color:#f92672>(</span>authenticateUserHandler<span style=color:#f92672>);</span>
+		UsernameBannedHandler usernameBannedHandler <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> UsernameBannedHandler<span style=color:#f92672>(</span>userCachedHandler<span style=color:#f92672>);</span>
+		
+		UserAuthenticationRequest banned <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> UserAuthenticationRequest<span style=color:#f92672>(</span><span style=color:#e6db74>&#34;bannedUser&#34;</span><span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;password&#34;</span><span style=color:#f92672>);</span>
+		UserAuthenticationRequest cached <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> UserAuthenticationRequest<span style=color:#f92672>(</span><span style=color:#e6db74>&#34;cachedUser&#34;</span><span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;password&#34;</span><span style=color:#f92672>);</span>
+		UserAuthenticationRequest authenticated <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> UserAuthenticationRequest<span style=color:#f92672>(</span><span style=color:#e6db74>&#34;authenticatedUser&#34;</span><span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;password&#34;</span><span style=color:#f92672>);</span>
+		UserAuthenticationRequest failure <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> UserAuthenticationRequest<span style=color:#f92672>(</span><span style=color:#e6db74>&#34;authenticateFailure&#34;</span><span style=color:#f92672>,</span> <span style=color:#e6db74>&#34;password&#34;</span><span style=color:#f92672>);</span>
+		
+		UserAuthenticationResult bannedResult <span style=color:#f92672>=</span> usernameBannedHandler<span style=color:#f92672>.</span><span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>banned<span style=color:#f92672>);</span>
+		UserAuthenticationResult cachedResult <span style=color:#f92672>=</span> usernameBannedHandler<span style=color:#f92672>.</span><span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>cached<span style=color:#f92672>);</span>
+		UserAuthenticationResult authenticatedResult <span style=color:#f92672>=</span> usernameBannedHandler<span style=color:#f92672>.</span><span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>authenticated<span style=color:#f92672>);</span>
+		UserAuthenticationResult failureResult <span style=color:#f92672>=</span> usernameBannedHandler<span style=color:#f92672>.</span><span style=color:#a6e22e>handleUserCredentials</span><span style=color:#f92672>(</span>failure<span style=color:#f92672>);</span>
+		
+		System<span style=color:#f92672>.</span><span style=color:#a6e22e>out</span><span style=color:#f92672>.</span><span style=color:#a6e22e>println</span><span style=color:#f92672>(</span>bannedResult<span style=color:#f92672>.</span><span style=color:#a6e22e>toString</span><span style=color:#f92672>());</span>
+		System<span style=color:#f92672>.</span><span style=color:#a6e22e>out</span><span style=color:#f92672>.</span><span style=color:#a6e22e>println</span><span style=color:#f92672>();</span>
+		System<span style=color:#f92672>.</span><span style=color:#a6e22e>out</span><span style=color:#f92672>.</span><span style=color:#a6e22e>println</span><span style=color:#f92672>(</span>cachedResult<span style=color:#f92672>.</span><span style=color:#a6e22e>toString</span><span style=color:#f92672>());</span>
+		System<span style=color:#f92672>.</span><span style=color:#a6e22e>out</span><span style=color:#f92672>.</span><span style=color:#a6e22e>println</span><span style=color:#f92672>();</span>
+		System<span style=color:#f92672>.</span><span style=color:#a6e22e>out</span><span style=color:#f92672>.</span><span style=color:#a6e22e>println</span><span style=color:#f92672>(</span>authenticatedResult<span style=color:#f92672>.</span><span style=color:#a6e22e>toString</span><span style=color:#f92672>());</span>
+		System<span style=color:#f92672>.</span><span style=color:#a6e22e>out</span><span style=color:#f92672>.</span><span style=color:#a6e22e>println</span><span style=color:#f92672>();</span>
+		System<span style=color:#f92672>.</span><span style=color:#a6e22e>out</span><span style=color:#f92672>.</span><span style=color:#a6e22e>println</span><span style=color:#f92672>(</span>failureResult<span style=color:#f92672>.</span><span style=color:#a6e22e>toString</span><span style=color:#f92672>());</span>
+	<span style=color:#f92672>}</span>
+</code></pre></div><p>Output:</p><pre><code>Username: bannedUser
+Token: null
+IsAuthenticated: false
+
+Username: cachedUser
+Token: cachedUserToken
+IsAuthenticated: true
+
+Username: authenticatedUser
+Token: token
+IsAuthenticated: true
+
+Username: authenticateFailure
+Token: null
+IsAuthenticated: false
+</code></pre><h2 id=conclusion>Conclusion</h2><p><a href=https://github.com/jakehell/Chain-of-Responsibility-Example>Here</a> is the source of this code on GitHub.</p><div class=blog-tags><a href=https://jacobhell.com//tags/design/>design</a>&nbsp;
+<a href=https://jacobhell.com//tags/chain-of-responsibility/>chain of responsibility</a>&nbsp;</div><section id=comments><h3 class=title><a href=#comments>&#9997; Comments</a></h3><section class="staticman-comments post-comments"><form id=comment-form class=post-new-comment method=post action=https://jacob-hell-staticman.herokuapp.com/v2/entry/jacobhell/blog/master/comments><p>Be the first to leave a comment! 🎉</p><h3 class=prompt>Say something</h3><input type=hidden name=options[redirect] value=https://jacobhell.com/post/intro-chain-of-responsibility/#comment-submitted>
+<input type=hidden name=options[slug] value=intro-chain-of-responsibility>
+<input type=text name=fields[name] class=post-comment-field placeholder="Name *" required>
+<input type=email name=fields[email] class=post-comment-field placeholder="Email address (will not be public) *" required>
+<input type=hidden id=comment-parent name=fields[reply_to]>
+<textarea name=fields[comment] class=post-comment-field placeholder="Comment (markdown is accepted) *" required rows=10></textarea>
+<input type=submit class="post-comment-field btn btn-primary comment-buttons" value=Submit></form></section><div id=comment-submitted class=dialog><h3>Thank you!</h3><p>Your comment has been submitted and will be published once it has been approved. &#128522;</p><p><a href=# class="btn btn-primary comment-buttons ok">OK</a></p></div><script>function changeValue(a,b){document.getElementsByName(a)[0].value=b,window.location.hash="#comment-form"}</script></section></article></div><footer><div class=container><p class="credits copyright"><a href=https://jacobhell.com/about>Jacob Hell</a>
+&nbsp;&copy;
+2021
+&nbsp;/&nbsp;
+<a href=https://jacobhell.com/>Jacob Hell's Blog</a>
+&nbsp;&ndash;&nbsp;
+<i class="fas fa-moon" id=dark-mode-toggle></i><p class="credits theme-by">Powered By <a href=https://gohugo.io>Hugo</a>&nbsp;Theme <a href=https://github.com/matsuyoshi30/harbor>Harbor</a></p></p></div></footer></body></html>

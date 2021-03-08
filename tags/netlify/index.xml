@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>netlify on Jacob Hell's Blog</title><link>https://jacobhell.com/tags/netlify/</link><description>Recent content in netlify on Jacob Hell's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 29 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jacobhell.com/tags/netlify/index.xml" rel="self" type="application/rss+xml"/><item><title>Create a New Hugo Site on Netlify in 7 Easy Steps</title><link>https://jacobhell.com/post/hugo-site-netlify/</link><pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/hugo-site-netlify/</guid><description>&lt;p>Hugo is a great static site generator. Netlify is an amazing host for static sites. Let&amp;rsquo;s combine the power of them.&lt;/p>
+&lt;h3 id="requirements">Requirements&lt;/h3>
+&lt;p>Make sure that &lt;code>hugo&lt;/code> and &lt;code>git&lt;/code> are installed, and can be called from your command line.&lt;/p>
+&lt;h4 id="hugo">Hugo&lt;/h4>
+&lt;p>Run this command:&lt;/p>
+&lt;pre>&lt;code>hugo version
+&lt;/code>&lt;/pre>&lt;p>If installed, the version should print. This is what printed out for me:&lt;/p>
+&lt;pre>&lt;code>Hugo Static Site Generator v0.67.1-4F44227B windows/amd64 BuildDate: 2020-03-15T19:32:32Z
+&lt;/code>&lt;/pre>&lt;p>Otherwise, &lt;a href="https://gohugo.io/getting-started/installing/">here&lt;/a> are the install instructions&lt;/p>
+&lt;h4 id="git">Git&lt;/h4>
+&lt;p>Run this command:&lt;/p>
+&lt;pre>&lt;code>git --version
+&lt;/code>&lt;/pre>&lt;p>If installed, the version should print. This is what printed out for me:&lt;/p>
+&lt;pre>&lt;code>git version 2.21.0.windows.1
+&lt;/code>&lt;/pre>&lt;p>Otherwise, &lt;a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">here&lt;/a> are the install instructions.&lt;/p>
+&lt;h3 id="step-1-create-new-website">Step 1: Create New Website&lt;/h3>
+&lt;p>Open your command line, and run:&lt;/p>
+&lt;pre>&lt;code>hugo new site &amp;lt;sitename&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>Replace &lt;code>&amp;lt;sitename&amp;gt;&lt;/code> with the name of your site. My blog&amp;rsquo;s name is Software Enlightenment, so I used &lt;code>softwareenlightenment&lt;/code>.&lt;/p>
+&lt;h3 id="step-2-add-a-theme-to-your-website">Step 2: Add a Theme to Your Website&lt;/h3>
+&lt;p>In the same command line window, run:&lt;/p>
+&lt;pre>&lt;code>cd &amp;lt;sitename&amp;gt;
+git init
+git submodule add https://github.com/matsuyoshi30/harbor.git themes/ananke
+echo 'theme = &amp;quot;ananke&amp;quot;' &amp;gt;&amp;gt; config.toml
+&lt;/code>&lt;/pre>&lt;p>Doing this:&lt;/p>
+&lt;ol>
+&lt;li>Makes &lt;code>&amp;lt;sitename&amp;gt;&lt;/code> a git repo.&lt;/li>
+&lt;li>Adds the &lt;code>ananke&lt;/code> theme to you website.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="https://themes.gohugo.io/">Here&lt;/a> are the list of themes, if you don&amp;rsquo;t want to use &lt;code>ananke&lt;/code>.&lt;/p>
+&lt;h3 id="step-3-verify-website-works">Step 3: Verify Website Works&lt;/h3>
+&lt;p>In the same command line window, run:&lt;/p>
+&lt;pre>&lt;code>hugo serve
+&lt;/code>&lt;/pre>&lt;p>Then in a browser, go to &lt;code>localhost:1313&lt;/code>. You should see this:&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../hugo-site-netlify/hugo_new_site.PNG" alt="Hugo New Site" width="600" height="450">&lt;/div>
+&lt;h3 id="step-4-create-netlifytoml">Step 4: Create netlify.toml&lt;/h3>
+&lt;p>In the &lt;code>&amp;lt;sitename&amp;gt;&lt;/code> directory (where &lt;code>config.toml&lt;/code> is), make a file named &lt;code>netlify.toml&lt;/code>.&lt;/p>
+&lt;p>Copy and paste this into &lt;code>netlify.toml&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">build&lt;/span>]
+&lt;span style="color:#a6e22e">publish&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;public&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">command&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;hugo --gc --minify&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">production&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_VERSION&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;0.68.3&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">HUGO_ENV&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;production&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">HUGO_ENABLEGITINFO&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;true&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">split1&lt;/span>]
+&lt;span style="color:#a6e22e">command&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;hugo --gc --minify --enableGitInfo&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">split1&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_VERSION&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;0.68.3&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">HUGO_ENV&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;production&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">deploy&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">-&lt;/span>&lt;span style="color:#a6e22e">preview&lt;/span>]
+&lt;span style="color:#a6e22e">command&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">deploy&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">-&lt;/span>&lt;span style="color:#a6e22e">preview&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_VERSION&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;0.68.3&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">branch&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">-&lt;/span>&lt;span style="color:#a6e22e">deploy&lt;/span>]
+&lt;span style="color:#a6e22e">command&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;hugo --gc --minify -b $DEPLOY_PRIME_URL&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">branch&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">-&lt;/span>&lt;span style="color:#a6e22e">deploy&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_VERSION&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;0.68.3&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">context&lt;/span>.&lt;span style="color:#a6e22e">next&lt;/span>.&lt;span style="color:#a6e22e">environment&lt;/span>]
+&lt;span style="color:#a6e22e">HUGO_ENABLEGITINFO&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The settings above were taken from &lt;a href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify">here&lt;/a>.&lt;/p>
+&lt;h3 id="step-5-push-to-github">Step 5: Push to GitHub&lt;/h3>
+&lt;p>Make a new repository on GitHub.&lt;/p>
+&lt;p>You will be taken to the quick setup page. Copy the https link:&lt;/p>
+&lt;p>&lt;img src="../../hugo-site-netlify/new_repository.PNG" alt="GitHub quick setup page">&lt;/p>
+&lt;p>In the command line window, run:&lt;/p>
+&lt;pre>&lt;code>git remote add origin &amp;lt;https link you copied&amp;gt;
+git add .
+git commit -m 'initial commit'
+git push -u origin master
+&lt;/code>&lt;/pre>&lt;p>Verify that your code was pushed.&lt;/p>
+&lt;h3 id="step-6-linking-netlify-and-github">Step 6: Linking Netlify and GitHub&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Open Netlify in your web browser, then go to &lt;code>Sites&lt;/code>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;code>New site from Git&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;code>GitHub&lt;/code>&lt;/p>
+&lt;p>&lt;img src="../../hugo-site-netlify/connect_to_github.PNG" alt="Linking GitHub">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Enter your GitHub credentials&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Choose the site repository&lt;/p>
+&lt;p>&lt;img src="../../hugo-site-netlify/pick_repository.PNG" alt="Choosing the Repository">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click the &lt;code>&amp;gt;&lt;/code> Icon&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Validate that &lt;code>Branch to deploy&lt;/code> is &lt;code>master&lt;/code>.&lt;/p>
+&lt;ol>
+&lt;li>build command is &lt;code>hugo --gc --minify&lt;/code>&lt;/li>
+&lt;li>publish directory is &lt;code>public&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="../../hugo-site-netlify/deploy_settings.PNG" alt="Deploy Settings">&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &lt;code>Deploy site&lt;/code>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-7-site-should-be-live">Step 7: Site Should be Live!&lt;/h3>
+&lt;p>Should see this page:&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../hugo-site-netlify/deploying_site.PNG" alt="Deploying visual" width="600" height="450">&lt;/div>
+&lt;p>Once Netlify finishes deploying, should see this:&lt;/p>
+&lt;div style="text-align:center">&lt;img src="../../hugo-site-netlify/deploy_published.PNG" alt="Deploying Finished" width="600" height="450">&lt;/div>
+&lt;p>Click &lt;code>Preview deploy&lt;/code>. You will be taken to your live site!&lt;/p>
+&lt;h3 id="conclusion">Conclusion&lt;/h3>
+&lt;p>There&amp;rsquo;s not much in life that you can do in 7 steps. You can rest well at night knowing that hosting hugo sites on Netlify is an exception.&lt;/p>
+&lt;p>Let me know if you have problems performing these steps.&lt;/p></description></item></channel></rss>

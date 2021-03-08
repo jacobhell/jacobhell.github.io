@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pihole on Jacob Hell's Blog</title><link>https://jacobhell.com/tags/pihole/</link><description>Recent content in pihole on Jacob Hell's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 31 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jacobhell.com/tags/pihole/index.xml" rel="self" type="application/rss+xml"/><item><title>Setting Up my PiHole, a Short Story</title><link>https://jacobhell.com/post/setting-up-pihole/</link><pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/setting-up-pihole/</guid><description>&lt;p>I just couldn&amp;rsquo;t take answering surveys on my smart TV anymore.&lt;/p>
+&lt;h3 id="setting-up-my-pi-hole-a-short-story">Setting Up my Pi Hole, a Short Story&lt;/h3>
+&lt;p>On a weekend night, I often find myself diving through the depths of YouTube. Unfortunately, every 5 minutes, I get interrupted by an ad for something I don&amp;rsquo;t want like makeup subscriptions (I long ago disabled personalized tracking).&lt;/p>
+&lt;p>One day, I was perfectly content learning about Kombucha making. All of the sudden, Google absolutely needed me to fill out a survey. I held back a scream of rage and filled out the survey. This surrender truly shook me to my core.&lt;/p>
+&lt;p>Later that night, unable to sleep, I realized what I had to do. &amp;ldquo;I need to install Pi Hole!&amp;rdquo; I yelled with new found confidence.&lt;/p>
+&lt;h2 id="the-installation">The Installation&lt;/h2>
+&lt;p>So setting up Pi Hole is supposed to be really easy. It&amp;rsquo;s often one of the first projects people install on their pi. To install it you just run a single bash command:&lt;/p>
+&lt;p>&lt;code>curl -sSL https://install.pi-hole.net | bash&lt;/code>&lt;/p>
+&lt;p>Easy peasy I thought, I should back to Kombucha videos in no time.&lt;/p>
+&lt;h2 id="the-router-the-pace-5268ac">The Router, the Pace 5268AC&lt;/h2>
+&lt;p>&amp;ldquo;Not so fast&amp;rdquo;, my router/modem combo said. It continued: &amp;ldquo;You can&amp;rsquo;t change DNS settings on me!&amp;rdquo;&lt;/p>
+&lt;p>&amp;ldquo;Darn&amp;rdquo; I replied. A smile lit suddenly across my face. &amp;ldquo;Well, good thing I can use Pi Hole as a DHCP server too!&amp;rdquo;&lt;/p>
+&lt;p>The router/modem combo let out a hearty chuckle. &amp;ldquo;Not so fast, you can&amp;rsquo;t change DHCP settings either!&amp;rdquo;&lt;/p>
+&lt;p>The blood rushed to my face.&lt;/p>
+&lt;h2 id="the-new-router">The New Router&lt;/h2>
+&lt;p>I bought a new router. I plugged it into the uplink port on my old router/modem combo. I could change the DNS settings. Victory.&lt;/p>
+&lt;p>My Raspbian installation imploded, figuratively. It wouldn&amp;rsquo;t connect to the router via ethernet or wireless. Victory had been lost. To add insult to injury, I did not own an SD card reader, so I could not re install Raspbian.&lt;/p>
+&lt;p>Full of sorrow, I walked to Walmart and bought an SD card reader.&lt;/p>
+&lt;p>I reinstalled Raspbian. I reinstalled Pi Hole. It could connect to the router. I was blocking ads. My life became complete.&lt;/p>
+&lt;h2 id="lessons-learned">Lessons Learned&lt;/h2>
+&lt;ol>
+&lt;li>Make sure you can change DNS or DHCP settings on your router. If you can&amp;rsquo;t, you need a different one. Or a different firmware like &lt;a href="https://dd-wrt.com/">DD-WRT&lt;/a>.&lt;/li>
+&lt;li>Have an SD card reader when working with Raspberry Pis. You never know when you need to reinstall the OS.&lt;/li>
+&lt;li>Despite the challenges, a Pi Hole is fun and worthwhile.&lt;/li>
+&lt;/ol></description></item></channel></rss>

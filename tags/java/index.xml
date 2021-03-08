@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>java on Jacob Hell's Blog</title><link>https://jacobhell.github.io/tags/java/</link><description>Recent content in java on Jacob Hell's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 09 May 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://jacobhell.github.io/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>Eclipse versus IntelliJ</title><link>https://jacobhell.github.io/post/eclipse-vs-intellij/</link><pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/eclipse-vs-intellij/</guid><description>&lt;p>Let&amp;rsquo;s compare these two IDEs.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>java on Jacob Hell's Blog</title><link>https://jacobhell.github.io/tags/java/</link><description>Recent content in java on Jacob Hell's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 08 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jacobhell.github.io/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>What's New in Java 16</title><link>https://jacobhell.github.io/post/java-16/</link><pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/java-16/</guid><description>&lt;h2 id="vector-api-incubator">Vector API (Incubator)&lt;/h2>
+&lt;p>The Vector API has been added to the &lt;a href="https://openjdk.java.net/jeps/11">incubator module&lt;/a>.&lt;/p>
+&lt;p>The Vector API adds vector computations that reliably compile at runtime to optimal vector hardware instructions.&lt;/p>
+&lt;p>Here is an example:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">final&lt;/span> VectorSpecies&lt;span style="color:#f92672">&amp;lt;&lt;/span>Float&lt;span style="color:#f92672">&amp;gt;&lt;/span> SPECIES &lt;span style="color:#f92672">=&lt;/span> FloatVector&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">SPECIES_256&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">vectorComputation&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">float&lt;/span>&lt;span style="color:#f92672">[]&lt;/span> a&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">float&lt;/span>&lt;span style="color:#f92672">[]&lt;/span> b&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">float&lt;/span>&lt;span style="color:#f92672">[]&lt;/span> c&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> i &lt;span style="color:#f92672">=&lt;/span> 0&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#66d9ef">int&lt;/span> upperBound &lt;span style="color:#f92672">=&lt;/span> SPECIES&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">loopBound&lt;/span>&lt;span style="color:#f92672">(&lt;/span>a&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">length&lt;/span>&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#f92672">(;&lt;/span> i &lt;span style="color:#f92672">&amp;lt;&lt;/span> upperBound&lt;span style="color:#f92672">;&lt;/span> i &lt;span style="color:#f92672">+=&lt;/span> SPECIES&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">length&lt;/span>&lt;span style="color:#f92672">())&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#75715e">// FloatVector va, vb, vc;
+&lt;/span>&lt;span style="color:#75715e">&lt;/span> var va &lt;span style="color:#f92672">=&lt;/span> FloatVector&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">fromArray&lt;/span>&lt;span style="color:#f92672">(&lt;/span>SPECIES&lt;span style="color:#f92672">,&lt;/span> a&lt;span style="color:#f92672">,&lt;/span> i&lt;span style="color:#f92672">);&lt;/span>
+var vb &lt;span style="color:#f92672">=&lt;/span> FloatVector&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">fromArray&lt;/span>&lt;span style="color:#f92672">(&lt;/span>SPECIES&lt;span style="color:#f92672">,&lt;/span> b&lt;span style="color:#f92672">,&lt;/span> i&lt;span style="color:#f92672">);&lt;/span>
+var vc &lt;span style="color:#f92672">=&lt;/span> va&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">mul&lt;/span>&lt;span style="color:#f92672">(&lt;/span>va&lt;span style="color:#f92672">).&lt;/span>
+add&lt;span style="color:#f92672">(&lt;/span>vb&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">mul&lt;/span>&lt;span style="color:#f92672">(&lt;/span>vb&lt;span style="color:#f92672">)).&lt;/span>
+neg&lt;span style="color:#f92672">();&lt;/span>
+vc&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">intoArray&lt;/span>&lt;span style="color:#f92672">(&lt;/span>c&lt;span style="color:#f92672">,&lt;/span> i&lt;span style="color:#f92672">);&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#f92672">(;&lt;/span> i &lt;span style="color:#f92672">&amp;lt;&lt;/span> a&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">length&lt;/span>&lt;span style="color:#f92672">;&lt;/span> i&lt;span style="color:#f92672">++)&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+c&lt;span style="color:#f92672">[&lt;/span>i&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">(&lt;/span>a&lt;span style="color:#f92672">[&lt;/span>i&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">*&lt;/span> a&lt;span style="color:#f92672">[&lt;/span>i&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">+&lt;/span> b&lt;span style="color:#f92672">[&lt;/span>i&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">*&lt;/span> b&lt;span style="color:#f92672">[&lt;/span>i&lt;span style="color:#f92672">])&lt;/span> &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#f92672">-&lt;/span>1&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">0f&lt;/span>&lt;span style="color:#f92672">;&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Based on my research, this won&amp;rsquo;t be useful for most developers right away. It fits a niche used for low level processing and matrix multiplication.&lt;/p>
+&lt;h2 id="enable-c14-language-features">Enable C++14 Language Features&lt;/h2>
+&lt;p>Allows the use of C++14 language features in JDK C++ source code. This won&amp;rsquo;t be relevant to someone using Java to write code. But we might see performance improvements.&lt;/p>
+&lt;h2 id="migrate-from-mercurial-to-git-and-migrate-to-github">Migrate from Mercurial to Git and Migrate to GitHub&lt;/h2>
+&lt;p>Move the JDK repository to GitHub. I think this is a good change. Git is definitely the most widely used source control software. And GitHub is the easiest to use git hosting software.&lt;/p>
+&lt;h2 id="zgc-concurrent-thread-stack-processing">ZGC: Concurrent Thread-Stack Processing&lt;/h2>
+&lt;p>Move ZGC thread-stack processing from safepoints to a concurrent phase. This improves scalability and performance of the garbage collector. Not something a developer would notice immediately.&lt;/p>
+&lt;h2 id="unix-domain-socket-channels">Unix-Domain Socket Channels&lt;/h2>
+&lt;p>Add Unix-domain (&lt;code>AF_UNIX&lt;/code>) socket support to the &lt;a href="https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/nio/channels/SocketChannel.html">socket channel&lt;/a> and &lt;a href="https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/nio/channels/ServerSocketChannel.html">server-socket channel&lt;/a> APIs. A &lt;a href="https://en.wikipedia.org/wiki/Unix_domain_socket">Unix domain socket&lt;/a> is a data &lt;a href="https://en.wikipedia.org/wiki/Communication_endpoint">communications endpoint&lt;/a> for exchanging data between processes executing on the same host operating system.&lt;/p>
+&lt;p>Databases like Postgres and MySQL have Unix domain socket communication options. I&amp;rsquo;ve never used them, but I&amp;rsquo;m sure it will be useful for developers who regularly work with them.&lt;/p>
+&lt;h2 id="alpine-linux-port">Alpine Linux Port&lt;/h2>
+&lt;p>Port the JDK to Alpine Linux, and to other Linux distributions that use musl as their primary C library.&lt;/p>
+&lt;p>This will be helpful for getting services like Tomcat, Jetty, and Spring to work on Alpine linux based Docker images.&lt;/p>
+&lt;h2 id="elastic-metaspace">Elastic Metaspace&lt;/h2>
+&lt;p>Return unused HotSpot class-metadata (i.e., &lt;em>metaspace&lt;/em>) memory to the operating system more promptly. Not something a developer would notice immediately.&lt;/p>
+&lt;h2 id="windowsaarch64-port">Windows/AArch64 Port&lt;/h2>
+&lt;p>Port the JDK to Windows/AArch64.&lt;/p>
+&lt;h2 id="foreign-linker-api-incubator">Foreign Linker API (Incubator)&lt;/h2>
+&lt;p>Introduce an API that offers statically-typed, pure-Java access to native code.&lt;/p>
+&lt;p>Native code is code written in other languages like C, C++, and assembly. The Java Native Interface (JNI) is the framework that allows this currently. The Foreign Linker API and Project Panama seek to offer an alternative to the cumbersome JNI options.&lt;/p>
+&lt;h2 id="warnings-for-value-based-classes">Warnings for Value-Based Classes&lt;/h2>
+&lt;p>Designate the primitive wrapper classes as &lt;em>value-based&lt;/em> and deprecate their constructors for removal.&lt;/p>
+&lt;p>A value based class has the following properties:&lt;/p>
+&lt;ul>
+&lt;li>are final and immutable (though may contain references to mutable objects);&lt;/li>
+&lt;li>have implementations of &lt;code>equals&lt;/code>, &lt;code>hashCode&lt;/code>, and &lt;code>toString&lt;/code> which are computed solely from the instance&amp;rsquo;s state and not from its identity or the state of any other object or variable;&lt;/li>
+&lt;li>make no use of identity-sensitive operations such as reference equality (&lt;code>==&lt;/code>) between instances, identity hash code of instances, or synchronization on an instances&amp;rsquo;s intrinsic lock;&lt;/li>
+&lt;li>are considered equal solely based on &lt;code>equals()&lt;/code>, not based on reference equality (&lt;code>==&lt;/code>);&lt;/li>
+&lt;li>do not have accessible constructors, but are instead instantiated through factory methods which make no committment as to the identity of returned instances;&lt;/li>
+&lt;li>are &lt;em>freely substitutable&lt;/em> when equal, meaning that interchanging any two instances &lt;code>x&lt;/code> and &lt;code>y&lt;/code> that are equal according to &lt;code>equals()&lt;/code> in any computation or method invocation should produce no visible change in behavior.&lt;/li>
+&lt;/ul>
+&lt;p>Two examples of Value based classes are Optional and LocalDateTime.&lt;/p>
+&lt;p>This update isn&amp;rsquo;t very exciting, but it shows progress toward increasing adoption of Value Based classes.&lt;/p>
+&lt;h2 id="packaging-tool">Packaging Tool&lt;/h2>
+&lt;p>Provide the &lt;code>jpackage&lt;/code> tool, for packaging self-contained Java applications. &lt;code>jpackage&lt;/code> makes it easy to install and uninstall java applications. You can create installers for the desired machine (exe, dmg, and deb for example).&lt;/p>
+&lt;p>For destination machines, you don&amp;rsquo;t even have to install the JRE.&lt;/p>
+&lt;h2 id="foreign-memory-access-api-third-incubator">Foreign-Memory Access API (Third Incubator)&lt;/h2>
+&lt;p>Introduce an API to allow Java programs to safely and efficiently access foreign memory outside of the Java heap. This looks helpful for JVM developers.&lt;/p>
+&lt;h2 id="pattern-matching-for-instanceof">Pattern Matching for instanceof&lt;/h2>
+&lt;p>Enhance the Java programming language with &lt;em>pattern matching&lt;/em> for the &lt;code>instanceof&lt;/code> operator.&lt;/p>
+&lt;p>This change is very useful when using &lt;code>instanceof&lt;/code>.&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">(&lt;/span>obj &lt;span style="color:#66d9ef">instanceof&lt;/span> String s &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> s&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">contains&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#e6db74">&amp;#34;foo&amp;#34;&lt;/span>&lt;span style="color:#f92672">))&lt;/span> &lt;span style="color:#f92672">{&lt;/span>
+&lt;span style="color:#75715e">// s contains foo!
+&lt;/span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="records">Records&lt;/h2>
+&lt;p>Enhance the Java programming language with &lt;a href="https://cr.openjdk.java.net/~briangoetz/amber/datum.html">records&lt;/a>.&lt;/p>
+&lt;p>I&amp;rsquo;m excited for this update. Records make Java less verbose. Something that Project Lombok tries to solve as well.&lt;/p>
+&lt;p>For example, you can type:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">record &lt;span style="color:#a6e22e">Point&lt;/span>&lt;span style="color:#f92672">(&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> x&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#66d9ef">int&lt;/span> y&lt;span style="color:#f92672">)&lt;/span> &lt;span style="color:#f92672">{&lt;/span> &lt;span style="color:#f92672">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Which would create a class called &lt;code>Point&lt;/code> with a constructor with &lt;code>int x, int y&lt;/code>. You would also have accessor methods generated. Records are &lt;code>final&lt;/code> so you can&amp;rsquo;t edit them once created.&lt;/p>
+&lt;h2 id="strongly-encapsulate-jdk-internals-by-default">Strongly Encapsulate JDK Internals by Default&lt;/h2>
+&lt;p>Strongly encapsulate all internal elements of the JDK by default. This update is to improve security and maintainability of the JDK.&lt;/p>
+&lt;h2 id="sealed-classes-second-preview">Sealed Classes (Second Preview)&lt;/h2>
+&lt;p>A &lt;code>sealed&lt;/code> class only allows extension or implementation by other classes that it allows.&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">abstract&lt;/span> sealed &lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">Shape&lt;/span>
+permits Circle&lt;span style="color:#f92672">,&lt;/span> Rectangle&lt;span style="color:#f92672">,&lt;/span> Square
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Can only be extended by the classes Circle, Rectangle, and Square.&lt;/p>
+&lt;p>I&amp;rsquo;m not sure what I would use this for, but it&amp;rsquo;s good to know it exists.&lt;/p></description></item><item><title>Eclipse versus IntelliJ</title><link>https://jacobhell.github.io/post/eclipse-vs-intellij/</link><pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/eclipse-vs-intellij/</guid><description>&lt;p>Let&amp;rsquo;s compare these two IDEs.&lt;/p>
 &lt;h1 id="general-info">General Info&lt;/h1>
 &lt;h3 id="eclipse">Eclipse&lt;/h3>
 &lt;p>Eclipse was created by IBM and released in 2001. Eclipse natively supports Java, but has plugins for a ton of other languages. Eclipse is free and has no paid version.&lt;/p>

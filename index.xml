@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jacob Hell's Blog</title><link>https://jacobhell.com/</link><description>Recent content on Jacob Hell's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jacobhell.com/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Build a Gaming PC Under $250</title><link>https://jacobhell.com/post/gaming-pc-under-250/</link><pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/gaming-pc-under-250/</guid><description>&lt;h2 id="the-dell-optiplex-series">The Dell Optiplex Series&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jacob Hell's Blog</title><link>https://jacobhell.github.io/</link><description>Recent content on Jacob Hell's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 07 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://jacobhell.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Build a Gaming PC Under $250</title><link>https://jacobhell.github.io/post/gaming-pc-under-250/</link><pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/gaming-pc-under-250/</guid><description>&lt;h2 id="the-dell-optiplex-series">The Dell Optiplex Series&lt;/h2>
 &lt;p>This computer is the defacto tower purchased by IT departments. Since there are so many, it is easy to get them used.&lt;/p>
 &lt;p>The tower is also designed to modular. The components are easy to replace, and you can easily fit a GPU into a PCIe port.&lt;/p>
 &lt;h3 id="where-to-find-one">Where to Find One&lt;/h3>
@@ -64,7 +64,7 @@
 &lt;li>Buy a used Optiplex on Ebay&lt;/li>
 &lt;li>Buy a used GPU on Ebay&lt;/li>
 &lt;li>Buy a PSU off Amazon.&lt;/li>
-&lt;/ol></description></item><item><title>What Are Reliability, Scalability, and Maintainability in Distributed Systems?</title><link>https://jacobhell.com/post/reliability-scalability-maintainability/</link><pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/reliability-scalability-maintainability/</guid><description>&lt;h2 id="reliability">Reliability&lt;/h2>
+&lt;/ol></description></item><item><title>What Are Reliability, Scalability, and Maintainability in Distributed Systems?</title><link>https://jacobhell.github.io/post/reliability-scalability-maintainability/</link><pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/reliability-scalability-maintainability/</guid><description>&lt;h2 id="reliability">Reliability&lt;/h2>
 &lt;p>Roughly, reliability means &amp;ldquo;working correctly&amp;rdquo; even if something goes wrong. This thing going wrong can be hardware faults, software faults, or human error. A synonym for reliability is fault-tolerant. It is impossible for a system to be completely fault tolerant. One tool you can use to test your system&amp;rsquo;s tolerance is Netflix&amp;rsquo;s &lt;a href="https://netflix.github.io/chaosmonkey/">Chaos Monkey&lt;/a>.&lt;/p>
 &lt;h3 id="hardware-faults">Hardware Faults&lt;/h3>
 &lt;p>As we move into a cloud based style of software development, single machine failure is getting less common. However, cloud services sometimes randomly go out. One day, I was unable to use Azure due to the &lt;a href="https://siliconangle.com/2018/09/04/severe-weather-impacts-microsofts-azure-cloud-services-texas/">outage in Texas&lt;/a>.&lt;/p>
@@ -108,9 +108,9 @@
 &lt;li>TDD and Agile&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description></item><item><title>Implementing Pipeline from the SciKit Learn Module</title><link>https://jacobhell.com/post/pipeline-nlp/</link><pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/pipeline-nlp/</guid><description>&lt;p>I&amp;rsquo;m continuing learning NLP. In this notebook, I give an example of the Pipeline class for preprocessing and model fitting.&lt;/p>
+&lt;/ul></description></item><item><title>Implementing Pipeline from the SciKit Learn Module</title><link>https://jacobhell.github.io/post/pipeline-nlp/</link><pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/pipeline-nlp/</guid><description>&lt;p>I&amp;rsquo;m continuing learning NLP. In this notebook, I give an example of the Pipeline class for preprocessing and model fitting.&lt;/p>
 &lt;p>I&amp;rsquo;m using the &lt;code>fetch_20newsgroups&lt;/code> dataset from &lt;code>sklearn.datasets&lt;/code>.&lt;/p>
-&lt;p>You can find the code &lt;a href="https://github.com/jacobhell/learning-ml/blob/main/nlp-pt-2/main.ipynb">here&lt;/a>.&lt;/p></description></item><item><title>Setting Up my PiHole, a Short Story</title><link>https://jacobhell.com/post/setting-up-pihole/</link><pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/setting-up-pihole/</guid><description>&lt;p>I just couldn&amp;rsquo;t take answering surveys on my smart TV anymore.&lt;/p>
+&lt;p>You can find the code &lt;a href="https://github.com/jacobhell/learning-ml/blob/main/nlp-pt-2/main.ipynb">here&lt;/a>.&lt;/p></description></item><item><title>Setting Up my PiHole, a Short Story</title><link>https://jacobhell.github.io/post/setting-up-pihole/</link><pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/setting-up-pihole/</guid><description>&lt;p>I just couldn&amp;rsquo;t take answering surveys on my smart TV anymore.&lt;/p>
 &lt;h3 id="setting-up-my-pi-hole-a-short-story">Setting Up my Pi Hole, a Short Story&lt;/h3>
 &lt;p>On a weekend night, I often find myself diving through the depths of YouTube. Unfortunately, every 5 minutes, I get interrupted by an ad for something I don&amp;rsquo;t want like makeup subscriptions (I long ago disabled personalized tracking).&lt;/p>
 &lt;p>One day, I was perfectly content learning about Kombucha making. All of the sudden, Google absolutely needed me to fill out a survey. I held back a scream of rage and filled out the survey. This surrender truly shook me to my core.&lt;/p>
@@ -134,12 +134,12 @@
 &lt;li>Make sure you can change DNS or DHCP settings on your router. If you can&amp;rsquo;t, you need a different one. Or a different firmware like &lt;a href="https://dd-wrt.com/">DD-WRT&lt;/a>.&lt;/li>
 &lt;li>Have an SD card reader when working with Raspberry Pis. You never know when you need to reinstall the OS.&lt;/li>
 &lt;li>Despite the challenges, a Pi Hole is fun and worthwhile.&lt;/li>
-&lt;/ol></description></item><item><title>Implementing LDA in Python</title><link>https://jacobhell.com/post/lda/</link><pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/lda/</guid><description>&lt;h2 id="definition">Definition&lt;/h2>
+&lt;/ol></description></item><item><title>Implementing LDA in Python</title><link>https://jacobhell.github.io/post/lda/</link><pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/lda/</guid><description>&lt;h2 id="definition">Definition&lt;/h2>
 &lt;p>Latent Dirichlet Allocation (LDA) is a modelling technique used for NLP.&lt;/p>
 &lt;p>I&amp;rsquo;m following along on this &lt;a href="https://www.kaggle.com/arthurtok/spooky-nlp-and-topic-modelling-tutorial">kaggle notebook&lt;/a> to learn and explain these two techniques.&lt;/p>
 &lt;h2 id="code">Code&lt;/h2>
 &lt;p>I have uploaded the jupyter file &lt;a href="https://github.com/jacobhell/learning-ml/blob/main/nlp-starter/main.ipynb">here&lt;/a>.&lt;/p>
-&lt;p>And that&amp;rsquo;s how you do it. I&amp;rsquo;m not entirely sure how it works yet either, but I am learning!&lt;/p></description></item><item><title>Technology I Use</title><link>https://jacobhell.com/technology_i_use/</link><pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/technology_i_use/</guid><description>&lt;h2 id="technology-i-own-and-use">Technology I Own and Use&lt;/h2>
+&lt;p>And that&amp;rsquo;s how you do it. I&amp;rsquo;m not entirely sure how it works yet either, but I am learning!&lt;/p></description></item><item><title>Technology I Use</title><link>https://jacobhell.github.io/technology_i_use/</link><pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/technology_i_use/</guid><description>&lt;h2 id="technology-i-own-and-use">Technology I Own and Use&lt;/h2>
 &lt;ul>
 &lt;li>Smartphone: Google Pixel 2&lt;/li>
 &lt;li>Computer: Dell Optiplex 790 with Radeon RX 560 GPU and a PSU I found on Amazon&lt;/li>
@@ -151,7 +151,7 @@
 &lt;ul>
 &lt;li>Browser: Chrome with uBlock Origin on Desktop. Firefox with uBlock Origin on Mobile.&lt;/li>
 &lt;li>Code Editor: IntelliJ for Java. PyCharm for Python. vim for everything else.&lt;/li>
-&lt;/ul></description></item><item><title>Introduction to Simpson's Paradox</title><link>https://jacobhell.com/post/simpsons-paradox/</link><pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/simpsons-paradox/</guid><description>&lt;p>Introduction and how to avoid it.&lt;/p>
+&lt;/ul></description></item><item><title>Introduction to Simpson's Paradox</title><link>https://jacobhell.github.io/post/simpsons-paradox/</link><pubDate>Tue, 26 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/simpsons-paradox/</guid><description>&lt;p>Introduction and how to avoid it.&lt;/p>
 &lt;h2 id="definition">Definition&lt;/h2>
 &lt;p>Simpson&amp;rsquo;s Paradox can be defined like so:&lt;/p>
 &lt;pre>&lt;code>a/b &amp;lt; A/B
@@ -173,7 +173,7 @@ Men: 7/13 &amp;gt; Women: 6/13
 &lt;p>&lt;strong>Restriction&lt;/strong>: restrict the samples b only including certain subjects that have the same values of potential confounding variables.&lt;/p>
 &lt;p>&lt;strong>Matching&lt;/strong>: Match the subjects of treatment group with a counterpart in comparison group. The matched subjects must have the same values on the confounding variables.&lt;/p>
 &lt;p>&lt;strong>Statistical Control&lt;/strong>: Include potential confounders as variables in regression.&lt;/p>
-&lt;p>&lt;strong>Randomization&lt;/strong>: Assign treatment to a study randomly in a large number of subjects.&lt;/p></description></item><item><title>Running Spark Applications on Dockerized Spark</title><link>https://jacobhell.com/post/running-spark-applications-docker/</link><pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/running-spark-applications-docker/</guid><description>&lt;p>Sparking joy in Docker.&lt;/p>
+&lt;p>&lt;strong>Randomization&lt;/strong>: Assign treatment to a study randomly in a large number of subjects.&lt;/p></description></item><item><title>Running Spark Applications on Dockerized Spark</title><link>https://jacobhell.github.io/post/running-spark-applications-docker/</link><pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/running-spark-applications-docker/</guid><description>&lt;p>Sparking joy in Docker.&lt;/p>
 &lt;p>I&amp;rsquo;m getting into data engineering stuff. The biggest thing in data engineering right now is Spark. Spark lets you perform distributed processes. I consider it to be the Hadoop successor, since it&amp;rsquo;s so much faster.&lt;/p>
 &lt;p>Requirements:&lt;/p>
 &lt;ol>
@@ -213,7 +213,7 @@ spark&lt;span style="color:#f92672">.&lt;/span>stop&lt;span style="color:#f92672
 &lt;pre>&lt;code>docker exec -it &amp;lt;hash&amp;gt; bash
 &lt;/code>&lt;/pre>&lt;p>Lastly, in your spark docker container, run this command:&lt;/p>
 &lt;pre>&lt;code>bin/spark-submit --class &amp;quot;SimpleApp&amp;quot; --master local[4] app.jar
-&lt;/code>&lt;/pre>&lt;p>If you see something similar to &lt;strong>Lines with a: 46, Lines with b: 23&lt;/strong>, then good job, it works! You are ready for more Spark adventures.&lt;/p></description></item><item><title>How to Use uBlock Origin to Limit Distractions</title><link>https://jacobhell.com/post/u-block-distraction/</link><pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/u-block-distraction/</guid><description>&lt;p>uBlock Origin is usually used to block unwanted ads. But it is also a powerful tool to increase productivity.&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>If you see something similar to &lt;strong>Lines with a: 46, Lines with b: 23&lt;/strong>, then good job, it works! You are ready for more Spark adventures.&lt;/p></description></item><item><title>How to Use uBlock Origin to Limit Distractions</title><link>https://jacobhell.github.io/post/u-block-distraction/</link><pubDate>Tue, 19 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/u-block-distraction/</guid><description>&lt;p>uBlock Origin is usually used to block unwanted ads. But it is also a powerful tool to increase productivity.&lt;/p>
 &lt;p>Like most people, I get distracted by shiny things easily. By &amp;ldquo;Shiny Things&amp;rdquo;, I mean interesting headlines, news articles, and videos.&lt;/p>
 &lt;p>I&amp;rsquo;m different though, because I know that I need to block the shiny things before my feeble human brain can see them. Luckily, I know of just the tool to help me.&lt;/p>
 &lt;h3 id="ublock-origin">uBlock Origin&lt;/h3>
@@ -227,7 +227,7 @@ spark&lt;span style="color:#f92672">.&lt;/span>stop&lt;span style="color:#f92672
 &lt;h3 id="blocking-distracting-things">Blocking Distracting Things&lt;/h3>
 &lt;p>It&amp;rsquo;s easy to block distracting things using uBlock Origin. Watch the gif below:&lt;/p>
 &lt;div style="text-align:center">&lt;img src="../../blocking_network_posts.gif" alt="blocking network posts gif" width="800" height="600">&lt;/div>
-&lt;p>I hope this helped on your quest to reduce distractions.&lt;/p></description></item><item><title>Flow: How Working from Home Has Made Me Productive</title><link>https://jacobhell.com/post/flow/</link><pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/flow/</guid><description>&lt;p>Working from home has been a boon for my productivity.&lt;/p>
+&lt;p>I hope this helped on your quest to reduce distractions.&lt;/p></description></item><item><title>Flow: How Working from Home Has Made Me Productive</title><link>https://jacobhell.github.io/post/flow/</link><pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/flow/</guid><description>&lt;p>Working from home has been a boon for my productivity.&lt;/p>
 &lt;p>I&amp;rsquo;ve wanted to work from home since, well I started working. I&amp;rsquo;m introverted and dislike interruptions. I&amp;rsquo;m not good at small talk. I control the air conditioning. The reasons are endless.&lt;/p>
 &lt;p>Since the pandemic started, I&amp;rsquo;ve been working from home. I&amp;rsquo;ve enjoyed the reasons I listed above. However, I didn&amp;rsquo;t expect to be extremely productive.&lt;/p>
 &lt;p>I find myself most productive when in a &lt;a href="https://en.wikipedia.org/wiki/Flow_(psychology)">state of flow&lt;/a>. In this state, I really only notice myself and the monitor. The keyboard is just an extension of myself. No bug deters me. Unfortunately, I only attain this state for around 30 minutes in the office. This is due to a combination of interruptions and not being in complete control my environment.&lt;/p>
@@ -237,7 +237,7 @@ spark&lt;span style="color:#f92672">.&lt;/span>stop&lt;span style="color:#f92672
 &lt;blockquote>
 &lt;p>&lt;strong>I’m not available.&lt;/strong> I often work in hidden nooks of the various libraries on campus. I check and respond to work e-mail only a few times a day. People have to wait for responses from me. It’s often hard to find me. Sometimes they get upset at first. But they don’t really need immediate access. And I will always respond within a reasonable timeframe and get them what they need. So they adjust. And I get things done.&lt;/p>
 &lt;/blockquote>
-&lt;p>With complete control over my environment and no interruptions, I have averaged 4 hours of flow per day! It&amp;rsquo;s probably the most productive I&amp;rsquo;ve been in my life.&lt;/p></description></item><item><title>Eclipse versus IntelliJ</title><link>https://jacobhell.com/post/eclipse-vs-intellij/</link><pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/eclipse-vs-intellij/</guid><description>&lt;p>Let&amp;rsquo;s compare these two IDEs.&lt;/p>
+&lt;p>With complete control over my environment and no interruptions, I have averaged 4 hours of flow per day! It&amp;rsquo;s probably the most productive I&amp;rsquo;ve been in my life.&lt;/p></description></item><item><title>Eclipse versus IntelliJ</title><link>https://jacobhell.github.io/post/eclipse-vs-intellij/</link><pubDate>Sat, 09 May 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/eclipse-vs-intellij/</guid><description>&lt;p>Let&amp;rsquo;s compare these two IDEs.&lt;/p>
 &lt;h1 id="general-info">General Info&lt;/h1>
 &lt;h3 id="eclipse">Eclipse&lt;/h3>
 &lt;p>Eclipse was created by IBM and released in 2001. Eclipse natively supports Java, but has plugins for a ton of other languages. Eclipse is free and has no paid version.&lt;/p>
@@ -274,7 +274,7 @@ spark&lt;span style="color:#f92672">.&lt;/span>stop&lt;span style="color:#f92672
 &lt;h3 id="intellij-4">IntelliJ&lt;/h3>
 &lt;p>Never had a random problem like this in IntelliJ. However, due to Eclipse being the most used IDE for some time, figuring out a problem is relatively easy. Since there is a good chance that someone else has had the same problem and posted their issue on the internet.&lt;/p>
 &lt;h1 id="conclusion">Conclusion&lt;/h1>
-&lt;p>I didn&amp;rsquo;t intend for this post to be dropping bombs on Eclipse. IntelliJ is just a lot better in my opinion. The only major drawback is that if you are not doing desktop Java development, you need to buy the paid version to assist with your coding.&lt;/p></description></item><item><title>How to Get OpenJFX Working in Eclipse</title><link>https://jacobhell.com/post/javafx-eclipse/</link><pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/javafx-eclipse/</guid><description>&lt;p>Get the power of JavaFX working in Eclipse. Without the licensing requirements of Oracle JDK.&lt;/p>
+&lt;p>I didn&amp;rsquo;t intend for this post to be dropping bombs on Eclipse. IntelliJ is just a lot better in my opinion. The only major drawback is that if you are not doing desktop Java development, you need to buy the paid version to assist with your coding.&lt;/p></description></item><item><title>How to Get OpenJFX Working in Eclipse</title><link>https://jacobhell.github.io/post/javafx-eclipse/</link><pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/javafx-eclipse/</guid><description>&lt;p>Get the power of JavaFX working in Eclipse. Without the licensing requirements of Oracle JDK.&lt;/p>
 &lt;h2 id="requirements">Requirements&lt;/h2>
 &lt;p>This walkthrough assumes you have Eclipse and a JDK installed.&lt;/p>
 &lt;h2 id="downloading-openjfx">Downloading OpenJFX&lt;/h2>
@@ -320,7 +320,7 @@ launch&lt;span style="color:#f92672">(&lt;/span>args&lt;span style="color:#f9267
 &lt;/ol>
 &lt;h3 id="conclusion">Conclusion&lt;/h3>
 &lt;p>Select &lt;code>Run&lt;/code> and you should be greeted with a window with the title &lt;code>Hello World&lt;/code>!&lt;/p>
-&lt;p>A lot of work to get this working. But at least no Oracle licensing was involved!&lt;/p></description></item><item><title>Create a New Hugo Site on Netlify in 7 Easy Steps</title><link>https://jacobhell.com/post/hugo-site-netlify/</link><pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/hugo-site-netlify/</guid><description>&lt;p>Hugo is a great static site generator. Netlify is an amazing host for static sites. Let&amp;rsquo;s combine the power of them.&lt;/p>
+&lt;p>A lot of work to get this working. But at least no Oracle licensing was involved!&lt;/p></description></item><item><title>Create a New Hugo Site on Netlify in 7 Easy Steps</title><link>https://jacobhell.github.io/post/hugo-site-netlify/</link><pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/hugo-site-netlify/</guid><description>&lt;p>Hugo is a great static site generator. Netlify is an amazing host for static sites. Let&amp;rsquo;s combine the power of them.&lt;/p>
 &lt;h3 id="requirements">Requirements&lt;/h3>
 &lt;p>Make sure that &lt;code>hugo&lt;/code> and &lt;code>git&lt;/code> are installed, and can be called from your command line.&lt;/p>
 &lt;h4 id="hugo">Hugo&lt;/h4>
@@ -434,7 +434,7 @@ git push -u origin master
 &lt;p>Click &lt;code>Preview deploy&lt;/code>. You will be taken to your live site!&lt;/p>
 &lt;h3 id="conclusion">Conclusion&lt;/h3>
 &lt;p>There&amp;rsquo;s not much in life that you can do in 7 steps. You can rest well at night knowing that hosting hugo sites on Netlify is an exception.&lt;/p>
-&lt;p>Let me know if you have problems performing these steps.&lt;/p></description></item><item><title>Java Programming is 90% Easier with Project Lombok</title><link>https://jacobhell.com/post/project-lombok/</link><pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/project-lombok/</guid><description>&lt;p>Writing in Java is a pain in the butt. Even simple code is verbose. Project Lombok condenses Java syntax. This reduction can be up to 90% of normal java code.&lt;/p>
+&lt;p>Let me know if you have problems performing these steps.&lt;/p></description></item><item><title>Java Programming is 90% Easier with Project Lombok</title><link>https://jacobhell.github.io/post/project-lombok/</link><pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/project-lombok/</guid><description>&lt;p>Writing in Java is a pain in the butt. Even simple code is verbose. Project Lombok condenses Java syntax. This reduction can be up to 90% of normal java code.&lt;/p>
 &lt;p>Let&amp;rsquo;s see how Lombok does this.&lt;/p>
 &lt;h2 id="setting-up">Setting Up&lt;/h2>
 &lt;p>I&amp;rsquo;m using maven. &lt;a href="https://projectlombok.org/setup/maven">Here&lt;/a> are the Project Lombok maven docs.&lt;/p>
@@ -619,7 +619,7 @@ result &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672"
 &lt;span style="color:#f92672">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="conclusion">Conclusion&lt;/h2>
 &lt;p>&lt;a href="https://projectlombok.org/">Project Lombok&lt;/a> is my best find this year. But wait, there&amp;rsquo;s more!&lt;/p>
-&lt;p>The &lt;a href="https://projectlombok.org/features/all">documentation&lt;/a> is fantastic and has further features to sink your teeth into.&lt;/p></description></item><item><title>The Chain of Responsibility Pattern Makes Hard Validation Easy</title><link>https://jacobhell.com/post/intro-chain-of-responsibility/</link><pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/intro-chain-of-responsibility/</guid><description>&lt;p>I like my validation workflow the same way I like my IKEA tables. Easy to setup and with a cool name. Though the Chain of Responsibility is no &lt;a href="https://www.ikea.com/us/en/p/godfjord-bed-frame-gray-s99256172/">Godfjord&lt;/a>, it is pretty easy to use.&lt;/p>
+&lt;p>The &lt;a href="https://projectlombok.org/features/all">documentation&lt;/a> is fantastic and has further features to sink your teeth into.&lt;/p></description></item><item><title>The Chain of Responsibility Pattern Makes Hard Validation Easy</title><link>https://jacobhell.github.io/post/intro-chain-of-responsibility/</link><pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/intro-chain-of-responsibility/</guid><description>&lt;p>I like my validation workflow the same way I like my IKEA tables. Easy to setup and with a cool name. Though the Chain of Responsibility is no &lt;a href="https://www.ikea.com/us/en/p/godfjord-bed-frame-gray-s99256172/">Godfjord&lt;/a>, it is pretty easy to use.&lt;/p>
 &lt;h2 id="intro">Intro&lt;/h2>
 &lt;p>Hello professional computer touchers.&lt;/p>
 &lt;p>A great &lt;a href="https://refactoring.guru/design-patterns/chain-of-responsibility">intro&lt;/a> has already been written for Chain of Responsibility. I highly recommend Refactoring.Guru for their other articles too.&lt;/p>
@@ -824,7 +824,7 @@ Username: authenticateFailure
 Token: null
 IsAuthenticated: false
 &lt;/code>&lt;/pre>&lt;h2 id="conclusion">Conclusion&lt;/h2>
-&lt;p>&lt;a href="https://github.com/jakehell/Chain-of-Responsibility-Example">Here&lt;/a> is the source of this code on GitHub.&lt;/p></description></item><item><title>Don't Want to Create a Ton of Getters/Setters? Say Hello to the Abstract Document Pattern.</title><link>https://jacobhell.com/post/intro-abstract-document-pattern/</link><pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/intro-abstract-document-pattern/</guid><description>&lt;p>In this post, I talk about the Abstract Document pattern, which allows one to pseudo-dynamically create properties for a model. While keeping the type safety that statically typed languages like Java provide.&lt;/p>
+&lt;p>&lt;a href="https://github.com/jakehell/Chain-of-Responsibility-Example">Here&lt;/a> is the source of this code on GitHub.&lt;/p></description></item><item><title>Don't Want to Create a Ton of Getters/Setters? Say Hello to the Abstract Document Pattern.</title><link>https://jacobhell.github.io/post/intro-abstract-document-pattern/</link><pubDate>Mon, 23 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/intro-abstract-document-pattern/</guid><description>&lt;p>In this post, I talk about the Abstract Document pattern, which allows one to pseudo-dynamically create properties for a model. While keeping the type safety that statically typed languages like Java provide.&lt;/p>
 &lt;h3 id="type-safety">Type Safety&lt;/h3>
 &lt;p>Type safety is an important concept for programming languages. More dynamically typed languages like JavaScript will try to execute almost anything you try at it. Even if an operation between two values will not work on paper. For example:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-javascript" data-lang="javascript">&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">foo&lt;/span>(){
@@ -971,14 +971,14 @@ Model 1
 Model 2
 &lt;/code>&lt;/pre>&lt;h3 id="conclusion">Conclusion&lt;/h3>
 &lt;p>Thanks for reading!&lt;/p>
-&lt;p>I have created a GitHub repo with the source for this post. Please &lt;a href="https://github.com/jakehell/AbstractDocumentPatternExample">go here&lt;/a> to view it.&lt;/p></description></item><item><title>About</title><link>https://jacobhell.com/about/</link><pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/about/</guid><description>&lt;p>Hello!&lt;/p>
+&lt;p>I have created a GitHub repo with the source for this post. Please &lt;a href="https://github.com/jakehell/AbstractDocumentPatternExample">go here&lt;/a> to view it.&lt;/p></description></item><item><title>About</title><link>https://jacobhell.github.io/about/</link><pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/about/</guid><description>&lt;p>Hello!&lt;/p>
 &lt;p>My name is Jacob. I&amp;rsquo;m a software engineer who currently lives in Huntsville, AL, also known as the Rocket City.&lt;/p>
 &lt;p>In this blog, I post about software architecture, design, unit testing, and sometimes other tech topics.&lt;/p>
 &lt;p>Interested in knowing more about me? Please reach out by &lt;a href="mailto:jakehell95@gmail.com">email&lt;/a>, or by checking out some of these sites that I&amp;rsquo;m registered for:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.linkedin.com/in/jacob-hell">LinkedIn&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/jacobhell">GitHub&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Have a lot of if/else Statements Doing Similar Things? Use an Abstract Factory!</title><link>https://jacobhell.com/post/using-abstract-factory-pattern/</link><pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/using-abstract-factory-pattern/</guid><description>&lt;p>When working on a legacy system, one of the more common problems I see is similar actions happening within if/else or control statements.&lt;/p>
+&lt;/ul></description></item><item><title>Have a lot of if/else Statements Doing Similar Things? Use an Abstract Factory!</title><link>https://jacobhell.github.io/post/using-abstract-factory-pattern/</link><pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/using-abstract-factory-pattern/</guid><description>&lt;p>When working on a legacy system, one of the more common problems I see is similar actions happening within if/else or control statements.&lt;/p>
 &lt;p>Take this code snippet for example:&lt;/p>
 &lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-java" data-lang="java">&lt;span style="color:#66d9ef">public&lt;/span> LedgerEntry &lt;span style="color:#a6e22e">getLedgerEntry&lt;/span>&lt;span style="color:#f92672">(&lt;/span>TransactionDetails details&lt;span style="color:#f92672">)&lt;/span>
 &lt;span style="color:#f92672">{&lt;/span>
@@ -1069,7 +1069,7 @@ entry&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#a6e22e">se
 &lt;span style="color:#66d9ef">return&lt;/span> entry&lt;span style="color:#f92672">;&lt;/span>
 &lt;span style="color:#f92672">}&lt;/span>
 &lt;span style="color:#f92672">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Programming on the Cheap. How to Program on a $20 Device.</title><link>https://jacobhell.com/post/programming-on-the-cheap/</link><pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.com/post/programming-on-the-cheap/</guid><description>&lt;p>Like most people, I like to do things as cheaply as possible.&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Programming on the Cheap. How to Program on a $20 Device.</title><link>https://jacobhell.github.io/post/programming-on-the-cheap/</link><pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/post/programming-on-the-cheap/</guid><description>&lt;p>Like most people, I like to do things as cheaply as possible.&lt;/p>
 &lt;p>This thought extends to programming for me. Lucky for us who are software developers, a lot of the tools we get to use are free.&lt;/p>
 &lt;p>This includes programming languages with their compilers, IDEs and editors, and even operating systems. We can thank the pioneers of the
 free software movement and GNU project for this.&lt;/p>
@@ -1086,7 +1086,7 @@ free, they can be very expensive! In fact, on &lt;a href="https://www.techradar.
 &lt;p>Lubuntu has a pretty straightforward &lt;a href="https://help.ubuntu.com/community/Lubuntu/InstallingLubuntu">installation process&lt;/a>. I had no problems going through the steps in the guide. I did mistakenly try using the 64 bit version instead of the 32 bit version, which is what the cpu required.&lt;/p>
 &lt;p>I could have avoided this though, if I looked it up beforehand: &lt;a href="https://www.computerhope.com/issues/ch001121.htm">How to check&lt;/a>&lt;/p>
 &lt;p>With the stress and anxiety of $600 laptops behind me, I was able to fire up my new to me Lubuntu powered laptop, and write this blog post with great amounts of joy and happiness.&lt;/p>
-&lt;div style="text-align:center">&lt;img src="../../hacking_on_lubuntu.png" alt="Laptop using Lubuntu" width="600" height="450">&lt;/div></description></item><item><title>Search</title><link>https://jacobhell.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jacobhell.com/search/</guid><description>&lt;div class="searchBoxContainer">
+&lt;div style="text-align:center">&lt;img src="../../hacking_on_lubuntu.png" alt="Laptop using Lubuntu" width="600" height="450">&lt;/div></description></item><item><title>Search</title><link>https://jacobhell.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jacobhell.github.io/search/</guid><description>&lt;div class="searchBoxContainer">
 &lt;input type="text" id="searchBox" class="searchBox" placeholder="Search..." />
 &lt;/div>
 &lt;div id="searchResults" class="searchResults">&lt;/div></description></item></channel></rss>

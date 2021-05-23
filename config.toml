@@ -53,5 +53,5 @@ rssLimit = 20
 
     [[menu.footer]]
         name = "LinkedIn"
-        url = "https://linkedin.com/in/jacobhell"
+        url = "https://linkedin.com/in/jacob-hell"
         weight = 2 

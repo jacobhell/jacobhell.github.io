@@ -1,5 +1,4 @@
-baseURL = "https://jacobhell.github.io/"
-title = "Jacob Hell's Blog"
+title = "Jacob Hell"
 author = "Jacob Hell"
 paginate = 10
 languageCode = "en"
@@ -18,7 +17,7 @@ rssLimit = 20
 # Parameters
 [params]
    # subtitle = "Your blog subtitle goes here!"
-    dateFmt = "02.01.2006 15:04"
+    dateFmt = "02.01.2006"
 
 # Header
 [menu]
@@ -26,18 +25,18 @@ rssLimit = 20
         identifier = "posts"
         name = "Posts"
         url = "/posts/"
-        weight = 1 
+        weight = 1
 
   [[menu.main]]
-        identifier = "categories"
-        name = "Categories"
-        url = "/categories/"
-        weight = 2 
-
-  [[menu.main]]
-        identifier = "tags"
-        name = "Tags"
-        url = "/tags/"
+        identifier = "runs"
+        name = "Runs"
+        url = "/runs/"
+        weight = 2
+		
+	[[menu.main]]
+        identifier = "links"
+        name = "Links"
+        url = "/links/"
         weight = 3
 		
   [[menu.main]]

@@ -6,7 +6,7 @@ languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
-theme = "harbor"
+theme = "smol"
 rssLimit = 20
 
 [markup.goldmark.renderer]
@@ -15,33 +15,44 @@ rssLimit = 20
 [Author]
   name = "Jacob Hell"
 
-[outputs]
-  section = ["JSON", "HTML"]
-  
-[[params.nav]]
-  identifier = "about"
-  name = "About"
-  icon = "fas fa-user fa-lg"
-  url = "/about/"
-  weight = 3
-  
-[[params.nav]]
-  identifier = "tags"
-  name = "Tags"
-  icon = "fas fa-tag fa-lg"
-  url = "tags"
-  weight = 3
-  
-[[params.nav]]
-  identifier = "search"
-  name = "Search"
-  icon = "fas fa-search fa-lg"
-  url = "search"
-  weight = 3
+# Parameters
+[params]
+   # subtitle = "Your blog subtitle goes here!"
+    dateFmt = "02.01.2006 15:04"
 
-[[params.nav]]
-  identifier = "rss"
-  name = "RSS"
-  icon = "fas fa-rss"
-  url = "/index.xml"
-  weight = 3
+# Header
+[menu]
+  [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1 
+
+  [[menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 2 
+
+  [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 3
+		
+  [[menu.main]]
+		identifier = "feed"
+        name = "Feed"
+        url = "/index.xml"
+        weight = 4
+
+# Footer
+  [[menu.footer]]
+        name = "Github"
+        url = "https://github.com/jacobhell"
+        weight = 1 
+
+    [[menu.footer]]
+        name = "LinkedIn"
+        url = "https://linkedin.com/in/jacobhell"
+        weight = 2 

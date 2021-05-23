@@ -2,3 +2,6 @@
 	path = themes/harbor
 	url = https://github.com/jakehell/harbor.git
 	branch = master
+[submodule "themes/smol"]
+	path = themes/smol
+	url = https://github.com/colorchestra/smol

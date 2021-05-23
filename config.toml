@@ -1,4 +1,4 @@
-baseURL = "https://jacobhell.com/"
+baseURL = "https://jacobhell.github.io/"
 title = "Jacob Hell's Blog"
 author = "Jacob Hell"
 paginate = 10
@@ -11,12 +11,6 @@ rssLimit = 20
 
 [params]
   googleAnalytics = "UA-161403382-1"
-  
-[params.staticman]
-    endpoint = "https://jacob-hell-staticman.herokuapp.com/v2/entry"
-    username = "jacobhell"
-    repository = "blog"
-    branch = "master"
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -54,9 +48,3 @@ rssLimit = 20
   icon = "fas fa-rss"
   url = "/index.xml"
   weight = 3
-
-#  [params.logo]
-#    url = "icon.png"
-#    width = 50
-#    height = 50
-#    alt = "Logo"

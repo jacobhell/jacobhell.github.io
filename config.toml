@@ -1,6 +1,6 @@
 title = "Jacob Hell"
 author = "Jacob Hell"
-paginate = 10
+paginate = 50
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -28,9 +28,9 @@ rssLimit = 20
         weight = 1
 
   [[menu.main]]
-        identifier = "runs"
-        name = "Runs"
-        url = "/runs/"
+        identifier = "activities"
+        name = "Activities"
+        url = "/activities/"
         weight = 2
 		
 	[[menu.main]]

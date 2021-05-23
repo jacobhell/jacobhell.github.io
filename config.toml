@@ -9,9 +9,6 @@ footnoteReturnLinkContents = "^"
 theme = "harbor"
 rssLimit = 20
 
-[params]
-  googleAnalytics = "UA-161403382-1"
-
 [markup.goldmark.renderer]
   unsafe = true
 

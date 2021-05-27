@@ -4,7 +4,7 @@ author = "Jacob Hell"
 title = "Data Brokers and Opting Out"
 date = "2021-05-26"
 tags = [
-    "daily", "data", "privacy
+    "daily", "data", "privacy"
 ]
 
 +++
